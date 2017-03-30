@@ -36,7 +36,7 @@ for i in range(3):
     else:
         print("账号密码错误！请再次输入！您还有{0}次机会".format(2-i))
 else:
-    f = file('lock.txt','wb')
+    f = file('lock.txt','ab')
     f.write(username)
     f.close()
         
