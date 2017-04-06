@@ -10,9 +10,10 @@ print "欢迎使用员工信息查询系统"
 
 chazhao = raw_input("please input your find zifuchuan:")
 
-f1 = file('passwd','rb')
+f1 = file('passwd','wb')
 for i in f1.readlines():
     if chazhao in i:
+        #print  i.replace(chazhao,\033[41;33mchazhao\033[0m)
         print i,
     else:
         continue
