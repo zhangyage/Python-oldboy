@@ -3,13 +3,24 @@
 
 '''
 继承
+
+新式类    推荐使用
+           继承object
+    __file__   __doc__  __name__这些都是新式类定义的    类也是object创建的
+
+经典类
+            没有继承object
+            
+在其他语言中都是默认继承object,python继承的object是用c写的
+Python实在python2.2后产生的     修复在python中经典类多重继承的bug
 '''
 
 #子类  父类   或是（基类 派生类）
 
-class Father:
+class Father(object):
     def __init__(self):
         self.Fname = 'Fname'
+        print 'Father.__init__'
     
     def Func(self):
         print 'father.Func'
@@ -20,6 +31,10 @@ class Father:
 class Son(Father):
     def __init__(self):
         self.Sname = 'Sname'
+        print 'Son.__init__'
+        #Father.__init__(self)  #显示的执行父类的构造函数
+        super(Son,self).__init__()  #使用super执行父类的构造函数   这个时候需要我们的父类继承object
+        #上面的两种方法执行父类的构造函数
         
     def Bar(self):
         print 'son.Func'
