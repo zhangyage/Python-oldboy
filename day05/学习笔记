@@ -1,0 +1,25 @@
+主要学习py链接mysql操作
+
+需要安装对应的模块支持mysql的链接    MySQLdb
+安装方式：
+windows:  python -m pip install  MySQL-python
+          64位操作系统安装会出现问题：python -m pip install MySQL_python-1.2.5-cp27-none-win_amd64.whl
+                         插件下载路径：http://www.lfd.uci.edu/~gohlke/pythonlibs/#mysql-python
+linux: pip install MySQL-python
+
+
+数据库操作语句：、
+>create database pldboy;                                #创建数据库
+>drop database pldboy;                                  #删除数据库
+>use oldboy                                             #进入数据库
+>create table Usertable(id int,name varchar(10));       #创建表，字段设置
+>insert into Usertable(id,name) values(1,'zhangyage');  #在创建的数据
+>select * from Usertable;                               #查询操作  这个是可以添加条件的
+>update Usertable set name = 'yuanqing' where id =1;    #更新操作   如果没有后面的where条件判断更新的是表中的每行记录
+>delete  from Usertable;                                #删除操作   建议配合条件使用
+>show create table Usertable;                           #查看创建表的表结构
+
+学习顺序
+My_select>My_insert>My_update>My_delete>My_insert2>My_select2>My_select3>My_lastrowid
+
+main学习三层架构
