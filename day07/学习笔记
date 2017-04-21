@@ -1,0 +1,8 @@
+使用paramiko远程管理服务器
+
+windows安装paramiko插件方法：
+	1、python -m install pycrypto (paramiko依赖模块)
+	3、python -m install pip install  cryptography
+    2、python -m install paramiko
+    
+linux安装paramiko插件方法：
