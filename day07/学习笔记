@@ -6,3 +6,8 @@ windows安装paramiko插件方法：
     2、python -m install paramiko
     
 linux安装paramiko插件方法：
+
+
+多进程：
+    多进程是解决多线程不能使用多核的问题
+  multiprocessing
