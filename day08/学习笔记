@@ -1,0 +1,8 @@
+
+监控协议：
+SNMP  简单网络管理协议
+
+
+redis
+python链接redis模块对应的模块为redis
+	安装方式：python -m pip install redis

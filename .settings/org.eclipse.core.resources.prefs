@@ -97,3 +97,6 @@ encoding//day07/select_study/select_client.py=utf-8
 encoding//day07/select_study/select_server.py=utf-8
 encoding//day07/ssh_client.py=utf-8
 encoding//day07/ssh_client2.py=utf-8
+encoding//day08/redis_conn.py=utf-8
+encoding//day08/redishelper.py=utf-8
+encoding//day08/redishelper_client.py=utf-8
