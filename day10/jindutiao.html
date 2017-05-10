@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<title>js进度条</title>
+		
+
+
+	</head>
+	<body>
+	    <div style='width:500px;background-color:#ddd;'>
+	    	<div id='process' style='width:10%;background-color:green;height:10px;'>
+	    </div>
+	    <div><input type='button' value='点击停止' onclick='stop();' /></div>
+		<!--setInterval不间断执行--> 
+		<script type="text/javascript">
+        	pro = 10;
+        	
+        	function Foo(){
+        		var id = document.getElementById('process');
+        		pro = pro + 5;interval
+        		if(pro > 100){
+        			clearInterval(interval)
+        		}else{
+        			id.style.width = pro +'%';
+        		}
+        	}
+        	interval = setInterval('Foo()',100);  //设置定时器，执行间隔为100ms
+        	
+        	function stop(){
+        		clearTimeout(interval);//停止定时器
+        	}
+        </script>
+        <!-- 
+        		<script type="text/javascript">
+        	pro = 10;        	
+        	function Foo(){
+        		var id = document.getElementById('process');
+        		pro = pro + 5;
+        		id.style.width = pro +'%';
+        	}
+        	interval = setTimeout('Foo()',100);  //设置定时器，setTimeout只执行一次
+        </script>
+		-->
+
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<title>jquery练习</title>
+		<!-- 导入jquery文件 -->
+		<script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<div id='id1'>123<a>12</a>3</div>
+		
+		<input name='username' type='text' value='9999'>
+		
+		<div style='height:8000px;'></div>
+		<div><input type='button' value='返回顶部' onclick='dingbu();' /></div>
+		
+		<script type='text/javascript'>
+			var text = $('#id1').text();   //获取网页内容
+			var html = $('#id1').html();   //获取网页代码
+			console.log(text);
+			console.log(html);
+			$('#id1').text('zhangyage');   //修改网页内容
+			
+			
+			//修改input的name属性
+			var data = $("input[name='username']").val()
+			console.log(data)
+			$("input[name='username']").val('明天会更好！')
+			
+			
+			//返回顶部函数
+			function dingbu(){				
+				$(window).scrollTop(0)
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<title>js标题滚动</title>
+		
+
+
+	</head>
+	<body>
+        <script type="text/javascript">
+        	function Go(){
+        		var content = document.title;
+        		console.log(content);
+        		var firstChar = content.charAt(0);
+        		console.log(firstChar);
+        		var sub = content.substring(1,content.length);
+        		console.log(sub);
+        		document.title = sub + firstChar;        		
+        	}
+			setInterval('Go()',1000)
+        </script>
+		
+
+	</body>
+</html>

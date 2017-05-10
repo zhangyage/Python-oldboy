@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<title>jquery返回顶部</title>
+		<style>
+			.returnTop{
+				position:fixed;
+				width:50px;
+				height:50px;
+				right:20px;
+				bottom:20px;
+				background-color:red;
+				color:white;
+			}
+			.hide{
+				display:none;
+			}
+		</style>
+		
+		<!-- 导入jquery文件 -->
+		<script src="js/jquery.js"></script>
+	</head>
+	<body>
+	    <!-- 
+		<div id='returnTop' class='returnTop hide' onclick='Go();'>返回</br>顶部</div>
+		 -->
+		 <div id='returnTop' class='returnTop hide'>返回</br>顶部</div>
+		<div style='height:8000px;'></div>
+		
+		<script type='text/javascript'>
+			$(function(){
+				//当前页面加载完成后执行的函数
+				$('#returnTop').click(function(){
+					$(window).scrollTop(0)
+				})
+			})
+			
+			//这个函数在我们滚动滑轮的时候执行
+			$(window).scroll( function(){
+				//console.log(123);
+				var height = $(window).scrollTop();
+				//console.log(height);
+				if(height>0){
+					//显示返回顶部
+					$('#returnTop').removeClass('hide')
+				}else{
+					//隐藏返回顶部
+					$('#returnTop').addClass('hide')
+				}
+			})
+			
+			/*
+			function Go(){
+				//设置返回顶部
+				$(window).scrollTop(0);
+			}
+			*/
+		</script>
+	</body>
+</html>
