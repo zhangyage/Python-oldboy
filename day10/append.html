@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery-append</title>
+
+
+</head>
+
+<body>
+	<p>I would like to say: </p>
+	<input type="button" id='addID1' value="追加"/>
+    <input type="button" id='addID2' value="追加"/>
+    
+    
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript">
+		$(function(){
+			$('#addID1,#addID2').click(function(){
+				//获取当前点击的标签，可以是：追加1也可以的追加2
+				var currentId = $(this).attr('id'); //$(this)就是当前点击的标签
+				if(currentId=='addID1'){
+					$('p').append('alex'); //追加标签内容	
+				}else if(currentId=='addID2'){
+					$('p').append('old boy'); //追加标签内容	
+				}else{
+					
+				}
+				
+				 
+			});	
+		});
+    </script>
+</body>
+</html>
