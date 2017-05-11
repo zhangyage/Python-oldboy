@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery选择练习</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){           //$(function(){})代表的是页面记载完成，这个经常使用的
+		$('#selectAll').click(function(){
+			$('#checklist :checkbox').attr('checked',true);
+			//$('#checklist input[type="checkbox"]).attr('checked',true);
+			//上面的两行功能是一样的都是修改checked的属性的
+			});
+			
+		$('#unselectAll').click(function(){
+			$('#checklist :checkbox').attr('checked',false);
+			//$('#checklist input[type="checkbox"]).attr('checked',false);
+			//上面的两行功能是一样的都是修改checked的属性的
+			});		
+		
+		$('#reverseAll').click(function(){
+			$('#checklist :checkbox').each(function(){  //each循环所有的选中标签执行函数
+				$(this).attr('checked',!$(this).attr('checked'))				
+				});
+			});
+			
+			
+		})
+</script>
+
+
+</head>
+
+<body>
+	<div  id="checklist"> 
+    	<input type="checkbox" value="1"/>篮球
+        <input type="checkbox" value="2"/>足球
+        <input type="checkbox" value="3"/>棒球
+    </div>
+    <input type="button" value="全选" id="selectAll" />
+    <input type="button" value="不选" id="unselectAll" />
+    <input type="button" value="反选" id="reverseAll" />
+</body>
+</html>

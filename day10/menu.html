@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>js菜单练习</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<script type="text/javascript" src="js/jquery.js"> </script>
+
+<script type="text/javascript">
+	$(function(){
+		$('.title').click(function(){
+			$(this).next().removeClass('hide');
+			//.next()下一级标签  .removeClass移除class样式名为hide的样式
+			$(this).parent().siblings().children('body').addClass('hide');
+			//$(this)点击的当前标签
+			//.parent()父标签
+			//.siblings()兄弟标签
+			//.children('body')子标签所有
+			//.addClass('hide');添加class	
+		});
+	})
+</script>
+</head>
+
+<body>
+	<div class="container">
+    
+        <div>
+            <div>
+                <div class="title"><a>menu1</a></div>
+                <div class="body hide">
+                	<a href="">content1</a>
+                    <a href="">content2</a>
+                    <a href="">content3</a>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <div>
+                <div class="title">menu2</div>
+                <div class="body hide">
+                	<a href="">content1</a>
+                    <a href="">content2</a>
+                    <a href="">content3</a>
+                </div>
+            </div>
+        </div>
+        
+                <div>
+        <div>
+                <div class="title">menu3</div>
+                <div class="body hide">
+                	<a href="">content1</a>
+                    <a href="">content2</a>
+                    <a href="">content3</a>
+                </div>
+            </div>
+        </div>
+        
+     </div>
+</body>
+</html>
