@@ -1,0 +1,18 @@
+服务器程序和应用程序的通用标准
+wsgi：web服务网关接口
+
+
+常见的框架分类：
+MVC:model view controller
+MTV:model template view
+
+
+MVC
+	controller:处理业务逻辑
+	model:数据库处理（操作数据库）
+	view:存放网页
+	
+MTV
+	view:处理业务逻辑
+	model:数据库处理（操作数据库）
+	template:存放网页

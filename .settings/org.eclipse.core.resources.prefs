@@ -108,3 +108,7 @@ encoding//day08/redis_conn.py=utf-8
 encoding//day08/redishelper.py=utf-8
 encoding//day08/redishelper_client.py=utf-8
 encoding//day09/server.py=utf-8
+encoding//day11/server.py=utf-8
+encoding//day11/server_wsgi.py=utf-8
+encoding//day11/server_wsgi2.py=utf-8
+encoding//day11/server_wsgi3.py=utf-8
