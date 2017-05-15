@@ -1,0 +1,115 @@
+# -*- coding:utf-8 -*-
+
+from django.shortcuts import render
+from django.core.context_processors import request
+from django.http.response import HttpResponse
+
+from models import Asset
+from test.test_httplib import CERT_fakehostname
+#导入要处理的表
+
+# Create your views here.
+
+def index(request):
+    return HttpResponse('index')
+
+
+def login(request):
+    return HttpResponse('login')
+
+def list(request,id):
+    print id
+    #id就是我们在url中传递的页数，名字可以任意写 ,如果是多个参数按照顺序写
+    #url(r'^list/(\d*)', list),
+    return HttpResponse('list')
+
+def pic(request,name):
+    print name
+    #name是我们使用模板指定的参数名称，必须使用name作为参数传递
+    #url(r'^pic/(?P<name>\d*)', pic),
+    return HttpResponse('photo picture')
+
+
+def photo(request,name,id):
+    print name,id
+    #name是我们使用模板指定的参数名称，必须使用name作为参数传递
+    #url(r'^photo/(?P<name>\d*)/(?P<id>\d*)/$', photo),
+    #url(r'^photo/(?P<name>\d*)/', photo,{'id':2000}),
+    return HttpResponse('photo picture')
+
+#通过url传递name 将name插入数据库Asset表中，上面我们已经导入了Asset表
+def Add(request,name):
+    Asset.objects.create(hostname=name)
+    #插入数据
+    #或操作函数一样，我们定义好函数操作数据库中，需要到urls中设置路由规则同时导入我们写的Add模块
+    #url(r'^add/(?P<name>\d*)/', Add),
+    #访问连接：http://127.0.0.1:8080/web/add/68080/
+    return HttpResponse ('OK')
+
+def Delete(request,id):
+    Asset.objects.get(id=id).delete()
+    #获取单条数据删除    通过id判断
+    #或操作函数一样，我们定义好函数操作数据库中，需要到urls中设置路由规则同时导入我们写的Add模块
+    #url(r'^delete/(?P<id>\d*)/', Delete),
+    #访问连接：http://127.0.0.1:8080/web/delete/1/
+    return HttpResponse ('OK')
+
+
+
+
+def Update(request,id,hostname):
+    #单条修改
+    #访问连接：http://127.0.0.1:8080/web/update/2/guan23/
+    obj = Asset.objects.get(id=id)
+    #获取数据
+    obj.hostname = hostname
+    #修改数据 
+    obj.save()
+    #保存
+    return HttpResponse ('OK')
+
+def ManyUpdate(request,id,hostname):
+    #多行修改    获取id〉1的修改hostname
+    Asset.objects.filter(id__gt=id).update(hostname = hostname)
+    #访问连接：http://127.0.0.1:8080/web/manyupdate/1/guan23/
+    return HttpResponse ('OK')
+
+    '''
+def Get(request,hostname):
+
+    #查询    hostname__contains = hostname类似模糊查询
+    assetlist = Asset.objects.filter(hostname__contains = hostname)
+    for item in assetlist:
+        print item.id
+    #访问连接：http://127.0.0.1:8080/web/get/guan23/
+    #访问连接：http://127.0.0.1:8080/web/get/gu/
+    '''
+    
+    '''
+    alldata = Asset.objects.all()
+    #获取表中的所有行
+    #也可以使用如下的方式获得 alldata = Asset.objects.filter(id__gt=id)设置id的值为0
+    '''
+def Get(request):
+    '''
+    temp = Asset.objects.all()[0:2]
+    #获取前两行
+    for item in temp:
+        print item.id
+    #访问连接：http://127.0.0.1:8080/web/get
+    return HttpResponse ('OK')
+    '''
+    
+    '''
+    temp = Asset.objects.all().order_by('-id')
+    #-id代表的是逆序
+    #按照id排序逆序输出
+    for item in temp:
+        print item.id 
+    #访问连接：http://127.0.0.1:8080/web/get
+    return HttpResponse ('OK')   
+    '''
+    temp = Asset.objects.all().values_list()    
+    print temp
+    print temp.query
+    return HttpResponse ('OK') 
