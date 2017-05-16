@@ -2,7 +2,7 @@
 
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-from views import index,login,list,pic,photo,Add,Delete,Update,ManyUpdate,Get
+from views import index,login,list,pic,photo,Add,Delete,Update,ManyUpdate,Get,Assetlist,Login,Register
 #导入模块
 
 urlpatterns = patterns('',
@@ -13,7 +13,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^index/', index),
     #自定义url 放访问连接后加入index可以跳转到index函数  index函数在views中定义
-    url(r'^login/', login),
+    url(r'^Login/', login),
     url(r'^list/(\d*)', list),
     #(\d*)代表数字
     
@@ -33,4 +33,7 @@ urlpatterns = patterns('',
     url(r'^manyupdate/(?P<id>\d*)/(?P<hostname>\w*)/', ManyUpdate),
     #url(r'^get/(?P<hostname>\w*)/', Get),
     url(r'^get/', Get),
+    url(r'^assetlist/', Assetlist),
+    url(r'^login/', Login),
+    url(r'^register/', Register),
 )

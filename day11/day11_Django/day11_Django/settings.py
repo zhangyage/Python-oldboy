@@ -25,6 +25,11 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
+#指定一下我们的模板文件的存放路径   注意那个,必须有的
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR,'template'),    
+    )
+
 ALLOWED_HOSTS = []
 
 
@@ -44,7 +49,8 @@ INSTALLED_APPS = (
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    #'django.middleware.csrf.CsrfViewMiddleware',
+    #注释掉上面的一行可以解决我们使用Django的跨站请求伪造问题
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',

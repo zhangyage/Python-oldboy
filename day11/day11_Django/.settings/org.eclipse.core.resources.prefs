@@ -1,7 +1,9 @@
 eclipse.preferences.version=1
 encoding//day11_Django/settings.py=utf-8
 encoding//day11_Django/urls.py=utf-8
+encoding//web/forms.py=utf-8
 encoding//web/models.py=utf-8
+encoding//web/templatetags/test.py=utf-8
 encoding//web/urls.py=utf-8
 encoding//web/views.py=utf-8
 encoding/manage.py=utf-8

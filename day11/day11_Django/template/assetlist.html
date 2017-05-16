@@ -1,0 +1,47 @@
+{% extends "master/layout.html "%}
+<!-- 继承模板 -->
+
+
+{% load test %}
+<!-- 导入操作模块就是我们在templatetags中定义的simple_tag文件 -->
+
+<!-- 下面的部分是我们在模板中定义的可以变动的部分 -->
+{% block content %}
+
+<h1>{{user}}</h1>
+    
+    <table border="1px">
+            <tr>
+            	<td>id</td>
+            	<td>id*1000</td>
+                <td>hostname</td>
+                <td>create_date</td>
+                <td>update_date</td>
+            </tr>
+          
+    	{% for item in data %}
+        	<tr>
+            	<td>{{item.id}}</td>
+            	<td>{% mymethod item.id %}</td>
+            	<!-- 使用我们定义的tag处理id的显示 -->
+                <td>{{item.hostname}}</td>
+                <td>{{item.create_date}}</td>
+                <td>{{item.update_date}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    
+    {% if user%}
+    	<h2>真</h2>
+    {% else %}
+    	<h2>假</h2>
+    {% endif %}
+	
+	
+	{% ifequal user 'zhangyage'%}
+    	<h2>真 zhangyage</h2>
+    {% else %}
+    	<h2>假</h2>
+    {% endifequal %}
+
+{% endblock %}

@@ -5,6 +5,7 @@ from django.db import models
 class UserType(models.Model):
     name = models.CharField(max_length=50)
 
+
 #创建表   继承models.Model  但是首先需要执行配置文件我们需要在那个数据库创建我们的表
 #这种创建方式叫做codefirst
 class UserInfo(models.Model):
@@ -12,13 +13,15 @@ class UserInfo(models.Model):
     
     password = models.CharField(max_length=50)
     
+    email = models.CharField(max_length=50)
+    
     Gender = models.BooleanField(default=False)
     
     Age = models.IntegerField(default=22)
     
     memo = models.TextField(default='zhangyage')
     
-    CreateDate = models.DateTimeField(default='2017-05-15 11:30:00')
+    CreateDate = models.DateTimeField(auto_now = True)
 
     typeId = models.ForeignKey('UserType')
     #关联外键是两个表之间建立关系     UserType  一对多

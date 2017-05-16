@@ -1,11 +1,15 @@
 # -*- coding:utf-8 -*-
 
 from django.shortcuts import render
+from django.shortcuts import render_to_response
 from django.core.context_processors import request
 from django.http.response import HttpResponse
 
 from models import Asset
 from test.test_httplib import CERT_fakehostname
+from web.models import UserInfo
+from web.forms import RegisterForm
+
 #导入要处理的表
 
 # Create your views here.
@@ -113,3 +117,60 @@ def Get(request):
     print temp
     print temp.query
     return HttpResponse ('OK') 
+def Assetlist(request):
+        assert_list = Asset.objects.all()
+        resullt = render_to_response('assetlist.html',{'data':assert_list,'user':'zhangyage'})
+        return resullt
+        #导入模块render_to_response主要用来调用html文件
+        #from django.shortcuts import render_to_response
+        #这里我们需要在setting中设置一下模板存放的路径
+        #TEMPLATE_DIRS = (
+        #    os.path.join(BASE_DIR,'template'),    
+        #    )
+        #将相关数据反馈给字典中的key，然后key传递给网页经过网页模板处理输出
+        
+        #访问连接：http://127.0.0.1:8080/web/assetlist
+
+def Login(request):
+    if request.method == 'POST':
+        user = request.POST.get('username',None)  
+        #获取用户名  如果没有获取到赋值为None
+        pwd = request.POST.get('password',None)
+        #检查用户名和密码是否存在
+        result = UserInfo.objects.filter(username=user,password=pwd).count()
+        if result == 1:
+            return HttpResponse ('登陆成功！') 
+        else:
+            return render_to_response('login.html',{'status':'用户名密码错误！'})
+    else:
+        return render_to_response('login.html')
+    
+def Register(request):
+    register = RegisterForm()
+    
+    if request.method == 'POST':
+    #判断是否是提交数据    
+        form = RegisterForm(request.POST)
+        if form.is_valid():
+            data = form.cleaned_data
+            print data
+            
+            #UserInfo.objects.create(
+            #        username=request.POST.get('username'),
+            #        password=request.POST.get('password'),
+            #        email=request.POST.get('email'),
+            #        typeId_id=request.POST.get('typeid'),)
+            UserInfo.objects.create(
+                    username=data['username'],
+                    password=data['password'],
+                    email=data['email'],
+                    typeId_id=data['typeid'],)
+        else:
+            temp = form.errors.as_data()
+            print temp['email'][0].messages[0]
+    
+    return render_to_response('register.html',{'form':register})
+    #return render_to_response('register.html',{'form':register})
+    
+    
+        
