@@ -1,0 +1,14 @@
+{% extends "master/layout.html "%}
+<!-- 继承模板 -->
+
+<!-- 下面的部分是我们在模板中定义的可以变动的部分 -->
+{% block content %}
+<h1>{{status}}</h1>
+
+<a href="http://127.0.0.1:8080/manager/index">主机管理</a>
+<br />
+<a href="#">用户管理</a>
+<br />
+<a href="#">用户组管理</a>
+
+{% endblock %}

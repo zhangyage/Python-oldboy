@@ -1,0 +1,14 @@
+{% extends "master/layout.html "%}
+<!-- 继承模板 -->
+
+<!-- 下面的部分是我们在模板中定义的可以变动的部分 -->
+{% block content %}
+	<div style='height:90px;'>
+		<div style='margin-top:25px;'>用户注册>>>
+			<form action='/manager/register/' method='POST'>	
+				{{form.as_table}}     <!-- 这一行和上面的几行最终的结果是一样的直接造出一个表单但是建议使用上面的那种格式灵活 -->
+				<input type='submit' value='提交'/><span style='color:red'>{{status}}</span>
+			</form>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+Django处理流程
+ 客户端创建socket---〉连接服务端socket----〉通过路由系统跳转不同的Url--->执行views中的方法操作数据库把得到的数据反馈给html网页通过tempalte模板处理
+ 
+链表操作：
+一对一   一对多  多对多
+
+获取数据：
+all    获取表中的所有数据    
+get    获取表中的一条数据       （id=1）当没有数据符合是会报错，因此为了避免报错我们会在后面加一个,None避免报错优化代码  单条数据就是一个对象
+filter 获取符合条件的数据         UserInfo.objects.filter(id__gt = 5)  取出id〉的行
+						UserInfo.objects.filter(user_group__id__gt = 5 )  一对多链表查询
+						#user_group__id通过外间获取group表的id值，__gt获取大于5的值
+						#user_group__id查询    user_group.id取值
+
+表结构情况：
+		class UserType(models.Model):
+		    name = models.CharField(max_length=50)
+		    
+		    
+		class UserInfo(models.Model):
+		    username = models.CharField(max_length=50)
+		    password = models.CharField(max_length=50)
+		    email = models.EmailField()
+		    CreateDate = models.DateTimeField(auto_now = True)
+		    user_type = models.ForeignKey('UserType')   #外键

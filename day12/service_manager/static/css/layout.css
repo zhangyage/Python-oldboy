@@ -1,0 +1,25 @@
+/* CSS Document */
+#id1{
+	height:70px;
+	width:100%;
+	background-color:#4d7496;
+	}
+	
+img{
+	margin-left:50px;
+	margin-top:25px;}
+	
+.title{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFF;
+	font-size:36px;}
+
+.foot{
+	height:70px;
+	width:100%;
+	background-color:#4d7496;
+	
+	}
+.foot-title{
+	text-align:center;
+}

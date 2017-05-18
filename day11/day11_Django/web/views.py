@@ -81,7 +81,7 @@ def ManyUpdate(request,id,hostname):
     '''
 def Get(request,hostname):
 
-    #查询    hostname__contains = hostname类似模糊查询
+    #查询    hostname__contains = hostname类似模糊查询   支持正则表达式
     assetlist = Asset.objects.filter(hostname__contains = hostname)
     for item in assetlist:
         print item.id

@@ -1,0 +1,27 @@
+{% extends "master/layout.html "%}
+<!-- 继承模板 -->
+{% load disatr %}
+<!-- 下面的部分是我们在模板中定义的可以变动的部分 -->
+{% block content %}
+	<h1>{{decide}}</h1>
+    
+    <table border="1px">
+            <tr>
+            	<td>Id</td>
+            	<td>Hostname</td>
+                <td>Ip</td>
+                <td>GroupName</td>
+            </tr>
+          
+    	{% for item in data %}
+        	<tr>
+            	<td>{{item.id}}</td>
+                <td>{{item.hostname}}</td>
+                <td>{{item.ip}}</td>
+                <td>{% mymethod item.user_group_id %}</td>
+            	<!-- 使用我们定义的tag处理id的显示 -->
+            </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}

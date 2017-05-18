@@ -1,0 +1,28 @@
+{% extends "master/layout.html "%}
+<!-- 继承模板 -->
+
+
+<!-- 下面的部分是我们在模板中定义的可以变动的部分 -->
+{% block content %}
+  <form action="/manager/add/" method="post">
+	  <a style="font-family:Verdana, Geneva, sans-serif; font-size:32px;"> {{status}}</a>
+	  <br />
+	  <br />
+	    <input type="text" placeholder="hostname"   name="hostname" />
+	    <br />
+	    <br />
+	    <input type="text" placeholder="ip"  name="ip" />
+	    <br />
+	    <br />
+	    <select name="groupname">
+	      <option value="1">亚洲掘金</option>
+	      <option value="2">石时代</option>
+	      <option value="3">陨石地带</option>
+	      <option value="4">岩时代</option>
+	    </select>
+	    <br />
+	    <br />
+	    <input type="submit" value="添加" /><span style='color:red;margin-left:-155px;'>{{decide}}</span>
+	</form>
+
+{% endblock %}

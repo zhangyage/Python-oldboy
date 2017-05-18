@@ -16,6 +16,10 @@ MTV
 	view:处理业务逻辑
 	model:数据库处理（操作数据库）
 	template:存放网页
+
+
+Django处理流程
+ 客户端创建socket---〉连接服务端socket----〉通过路由系统跳转不同的Url--->执行views中的方法操作数据库把得到的数据反馈给html网页通过tempalte模板处理
 	
 	
 安装Django框架   MTV模式
@@ -263,6 +267,9 @@ MTV
                                     RegexValidator(regex='root_112233\d+', message='又错误了', code='c2'),
                                     EmailValidator(message='又错误了', code='c3'), ]
                             )
+ 
+ 
+ 
 	
 	
 	
