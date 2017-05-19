@@ -2,9 +2,7 @@
 
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-import manager.urls
-import app01.urls
-import app02.urls
+from views import index
 
 urlpatterns = patterns('',
     # Examples:
@@ -12,8 +10,6 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^manager/', include(manager.urls)),
-    url(r'^app01/', include(app01.urls)),
-    url(r'^app02/', include(app02.urls)),
+    url(r'^index/', index),
     
 )

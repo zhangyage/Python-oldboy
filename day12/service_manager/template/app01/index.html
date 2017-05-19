@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>原生HTML</h1>
+		<form action='/app01/index/' method='POST'>
+			<div>
+				<div>
+					<input name='username' placeholder='用户名'> 
+				</div>
+				<div>
+					<input name='email' placeholder='邮箱'> 
+				</div>
+				<div>
+					<input type='submit' value='登陆'>
+					
+				</div>
+			</div>
+		</form>
+	<h1>使用form的html</h1>
+		<form action='/app01/index/' method='POST'>
+			<div>
+				<div>
+					username:{{data.username}} 
+				</div>
+				<div>
+					email:{{data.email}} 
+				</div>
+				<div>
+					<input type='submit' value='登陆'>
+					<!--
+					<lable style='color:red;'>{{status.as_ul}}</lable> 
+					<!-- {{status.as_ul}}可以输出错误的具体信息  -->
+					<lable style='color:red;'>{{status}}</lable>
+				</div>
+			</div>
+		</form>	
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<input type='text' id='name' />
+	<input type='button' value='ajax请求' onclick='DoAjax();' />
+	<script type="text/javascript" src='/static/js/jquery.js'></script>
+	<script type="text/javascript" >
+		function DoAjax(){
+			var temp = $('#name').val();
+			$.ajax({
+				url:'/app02/ajax/',
+				type:'POST',
+				data:{dat:temp},
+				success:function(arg){
+				    var obj = jQuery.parseJSON(arg);
+				    //使用上面的方法可以将我们的使用dumps传递过来的字典还原
+				    //json.dumps处理有以后是一个字符串的形式    
+				    console.log(obj.ip);
+				    console.log(obj.hostname);
+				    console.log(obj.address);
+					console.log('successful');
+					console.log(arg);
+					//这个arg就是我们程序的返回值HttpResponse('ok')
+					$('#name').val('请求成功')
+				},
+				error:function(arg){
+					console.log('failed');
+					console.log(arg);
+				}
+			});
+		}
+	</script>
+	
+
+</body>
+</html>

@@ -2,7 +2,7 @@
 
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-from views import register,login,index,host,add,list
+from views import register,login,index,host,add,list,many
 
 
 urlpatterns = patterns('',
@@ -17,4 +17,6 @@ urlpatterns = patterns('',
     url(r'^host/', host),
     url(r'^add/', add),
     url(r'^list/', list),
+    
+    url(r'^many/', many),  #处理多对多的表
 )
