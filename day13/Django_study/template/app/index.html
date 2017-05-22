@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>分页练习</title>
+<link href='/static/css/list.css'  rel='stylesheet' id='dashicons-css' type='text/css' />
+</head>
+<body>
+	<h1>主机信息</h1>
+	<table border="1px">
+		   <tr>
+				<td>id</td>
+				<td>HostName</td>
+				<td>Ip</td>
+				<td>CreateDate</td>
+			</tr>
+		{% for item in data %}
+			<tr>
+				<td>{{ item.id}}</td>
+				<td>{{ item.HostName}}</td>
+				<td>{{ item.Ip}}</td>
+				<td>{{ item.CreateDate}}</td>
+			</tr>
+		{% endfor %}
+	</table>
+	<div>总条数为：{{count}}条,当前是第{{page}}页；</div>
+	
+	<div id='Pageing'>
+		{{Hpage}}
+	</div>
+</body>
+</html>

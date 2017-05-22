@@ -1,0 +1,194 @@
+# -*- coding:utf-8 -*-
+from django.shortcuts import render,HttpResponse,render_to_response,redirect
+from django.utils.safestring import mark_safe
+from models import Host
+import common
+#from django import forms.Form 
+
+# Create your views here.
+
+
+def index(request,page):
+    #result = Host.objects.all()
+    #count = Host.objects.all().count()
+    #输出全部内容
+
+    #result = Host.objects.all()[0:5]
+    #count = Host.objects.all()[0:5].count()
+    #输出制定条数
+    
+     
+    print page
+    '''
+    try:
+        page = int(page)
+        #将字符串转化为数字型
+    except Exception,e:
+        page = 1
+        print e    #异常报错输出
+            # 这段代码写在了common.py中作为公共部分使用
+    '''
+    page = common.try_int(page, 1)
+    #调用公共异常处理设置默认值
+    per_item = 5
+    #定制一下每页的条目数
+    start = (page-1)*per_item 
+    stop = page*per_item
+    #设定开始和结束的位置
+    result = Host.objects.all()[start:stop]
+    count = Host.objects.all().count()
+    #访问连接  http://127.0.0.1:8080/app/index/2
+    
+    all_pages,yushu = divmod(count,per_item)
+    #divmod(count,per_item)的得到结果是商，余数
+    if yushu == 0:
+        all_pages = all_pages
+    else:
+        all_pages = all_pages+1
+    
+    page_html = []
+    
+    first_html = "<a href='/app/index/%d'>首页</a>" % (1,)
+    page_html.append(first_html)
+    
+    if page <=1:
+        prev_html = "<a href='#'>上一页</a>" 
+    else:
+        prev_html = "<a href='/app/index/%d'>上一页</a>" % (page-1,)
+    page_html.append(prev_html)
+    
+    for i in range(all_pages):
+        if page == i+1:
+            a_html = "<a class='selected' href='/app/index/%d'>%d</a>" % (i+1,i+1)
+        else:
+            a_html = "<a href='/app/index/%d'>%d</a>" % (i+1,i+1)
+        page_html.append(a_html)
+    
+    next_html = "<a href='/app/index/%d'>下一页</a>" % (page+1,)
+    page_html.append(next_html)
+        
+    end_html = "<a href='/app/index/%d'>最后一页</a>" % (all_pages,)
+    page_html.append(end_html)    
+        
+    Hpage =  mark_safe(''.join(page_html))
+    #Hpage =  mark_safe("<a href='/app/index/1'>1</a>")
+    #mark_safe  将字符串转化为html标签，方法倒入方法如下：
+    #from django.utils.safestring import mark_safe
+    
+    
+    ret = {'data':result,'count':count,'page':page,'Hpage':Hpage}
+    return render_to_response('app/index.html',ret)
+#上面的内容是我们直接将所有的代码写在了views中
+
+为了提高代码的复用性，我们需要进行拆分：
+1、拆分异常处理模块到 common.py中
+2、拆分html转换模块到html_helper中
+3、将最前面的是一部分通过类实现   在实现前先进行一下分析，确定传入参数和输出数值
+		出入参数有：page 当前页,count 总行书, per_item每页显示的行数
+		需要输出有：start 开始页, end结束页, all_pages总页数
+		使用装饰器方便直接调用
+		
+views中最终代码简化为：
+# -*- coding:utf-8 -*-
+from django.shortcuts import render,HttpResponse,render_to_response,redirect
+from models import Host
+import common
+import html_helper
+
+def index(request,page):
+    page = common.try_int(page, 1)
+    #调用公共异常处理设置默认值
+
+    count = Host.objects.all().count()
+    #访问连接  http://127.0.0.1:8080/app/index/2
+    
+    pageobj = html_helper.PageInfo(page,count)
+    start = pageobj.start
+    stop = pageobj.end
+    result = Host.objects.all()[start:stop]
+    
+    all_pages = pageobj.all_pages
+    Hpage = html_helper.pager(page,all_pages)
+       
+    ret = {'data':result,'count':count,'page':page,'Hpage':Hpage}
+    return render_to_response('app/index.html',ret)
+    
+html_helper内容如下：
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+from django.utils.safestring import mark_safe    #对应的模块式将后台的字符串形式的王爷代码被浏览器识别
+
+
+class PageInfo:
+    def __init__(self,page,count,per_item=5):
+        #per_item=5 设置默认值为5
+        self.Page = page
+        self.Count = count
+        self.Per_item = per_item
+    
+    @property    
+    def start(self):
+        return (self.Page-1)*self.Per_item
+    
+    @property
+    def end(self):
+        return self.Page*self.Per_item
+    
+    @property
+    def all_pages(self):
+        all_pages,yushu = divmod(self.Count,self.Per_item)
+        #divmod(count,per_item)的得到结果是商，余数
+        if yushu == 0:
+            all_pages = all_pages
+        else:
+            all_pages = all_pages+1
+        return all_pages
+            
+def pager(page,all_pages):
+    page_html = []
+    
+    first_html = "<a href='/app/index/%d'>首页</a>" % (1,)
+    page_html.append(first_html)
+    
+    if page <=1:
+        prev_html = "<a href='#'>上一页</a>" 
+    else:
+        prev_html = "<a href='/app/index/%d'>上一页</a>" % (page-1,)
+    page_html.append(prev_html)
+    
+    begin = page - 6
+    end = page + 5
+    
+    if all_pages < 12:
+         begin = 0
+         end = all_pages
+    else:
+        if page < 6:
+            begin = 0
+            end = 11
+        else:
+            if page + 6 > all_pages:
+                begin = page - 5
+                end = all_pages
+            else:
+                begin = page - 6
+                end = page + 5
+                
+    for i in range(begin,end):
+        if page == i+1:
+            a_html = "<a class='selected' href='/app/index/%d'>%d</a>" % (i+1,i+1)
+        else:
+            a_html = "<a href='/app/index/%d'>%d</a>" % (i+1,i+1)
+        page_html.append(a_html)
+    
+    next_html = "<a href='/app/index/%d'>下一页</a>" % (page+1,)
+    page_html.append(next_html)
+        
+    end_html = "<a href='/app/index/%d'>最后一页</a>" % (all_pages,)
+    page_html.append(end_html)    
+        
+    Hpage =  mark_safe(''.join(page_html))
+    #Hpage =  mark_safe("<a href='/app/index/1'>1</a>")
+    #mark_safe  将字符串转化为html标签，方法倒入方法如下：
+    #from django.utils.safestring import mark_safe
+    return  Hpage   
