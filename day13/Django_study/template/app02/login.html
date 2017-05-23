@@ -6,6 +6,8 @@
 </head>
 <body>
 	<form action="/app02/login/" method="POST">
+		{% csrf_token %}
+		
     	<p>用户名：<input name='username' /></p>
         <p>密    码：<input name='password' type="password" /></p>
         <input type="submit" value="提交" />

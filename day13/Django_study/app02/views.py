@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
 from django.shortcuts import render,HttpResponse,render_to_response,redirect
+from django.template.context import RequestContext
 
 
 # Create your views here.
@@ -18,7 +19,8 @@ def login(request):
         else:
             return render_to_response('app02/login.html',{'status':'用户名或密码错误'})
     
-    return render_to_response('app02/login.html')
+    return render_to_response('app02/login.html',context_instance=RequestContext(request))
+    #context_instance=RequestContext(request)   tocken配合
 
 def index(request):
     #is_login = request.session.get('is_login')

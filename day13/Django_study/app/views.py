@@ -1,9 +1,9 @@
 # -*- coding:utf-8 -*-
-from django.shortcuts import render,HttpResponse,render_to_response,redirect
-from django.utils.safestring import mark_safe
+from django.shortcuts import render_to_response
 from models import Host
 import common
 import html_helper
+
 #from django import forms.Form 
 
 # Create your views here.
@@ -28,7 +28,9 @@ def index(request,page):
 #         page = 1
 #         print e    #异常报错输出
 #             # 这段代码写在了common.py中作为公共部分使用
-
+    per_item =  int(request.COOKIES.get('pager_num',10))
+    #获取cookie的传值
+    
     page = common.try_int(page, 1)
     #调用公共异常处理设置默认值
 #     per_item = 20
@@ -47,7 +49,7 @@ def index(request,page):
 #     else:
 #         all_pages = all_pages+1
 
-    pageobj = html_helper.PageInfo(page,count,10)
+    pageobj = html_helper.PageInfo(page,count,per_item)
     start = pageobj.start
     stop = pageobj.end
     result = Host.objects.all()[start:stop]
@@ -87,4 +89,8 @@ def index(request,page):
     
     
     ret = {'data':result,'count':count,'page':page,'Hpage':Hpage}
-    return render_to_response('app/index.html',ret)
+    response = render_to_response('app/index.html',ret)
+
+    response.set_cookie('k1','v1')
+    #设置cookie
+    return response
