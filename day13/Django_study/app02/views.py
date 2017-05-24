@@ -3,6 +3,16 @@ from django.shortcuts import render,HttpResponse,render_to_response,redirect
 from django.template.context import RequestContext
 
 
+#定义一个装饰器验证用户的
+def checklogin(main_func,*args,**kwargs):
+    def wrapper(request):
+        if request.session.get('is_login'):
+            return main_func(request,*args,**kwargs)
+        else:
+            redirect('/app02/login/')
+    return wrapper
+
+
 # Create your views here.
 
 def login(request):
@@ -22,15 +32,18 @@ def login(request):
     return render_to_response('app02/login.html',context_instance=RequestContext(request))
     #context_instance=RequestContext(request)   tocken配合
 
+#引用装饰器判断用户的登录状态
+@checklogin
 def index(request):
-    #is_login = request.session.get('is_login')
-    user_dict = request.session.get('is_login',None)
-    #获取session值
-    if not user_dict:
-        #print user_dict['user']
-        #如果为空就跳转登录页面
-        return redirect('/app02/login/')
-    return render_to_response('app02/index.html',{'username':user_dict['user']})
+#     #is_login = request.session.get('is_login')
+#     user_dict = request.session.get('is_login',None)
+#     #获取session值
+#     if not user_dict:
+#         #print user_dict['user']
+#         #如果为空就跳转登录页面
+#         return redirect('/app02/login/')
+    #return render_to_response('app02/index.html',{'username':user_dict['user']})
+    return render_to_response('app02/index.html',{'username':request.session.get('is_login')['user']})
 
 
 def logout(request):
