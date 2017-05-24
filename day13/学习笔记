@@ -1,3 +1,5 @@
 cookie  存放在客户端浏览器
 
 session 存放在服务器中
+
+python manage.py createsuperuser  这个命令是创建后台管理员账户密码   djangoadmin管理后台

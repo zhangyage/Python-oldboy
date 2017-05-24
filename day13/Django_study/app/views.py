@@ -10,6 +10,7 @@ import html_helper
 
 
 def index(request,page):
+    print 'view.index'
     #result = Host.objects.all()
     #count = Host.objects.all().count()
     #输出全部内容

@@ -11,7 +11,8 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-from django.conf.global_settings import SESSION_COOKIE_AGE
+
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -52,6 +53,9 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
+    #'oldboy.mymiddleware.Day13Middleware',
+    #导入自定义的中间件
 )
 
 ROOT_URLCONF = 'Django_study.urls'
@@ -105,5 +109,5 @@ STATICFILES_DIRS = (
     )
 
 
-SESSION_COOKIE_AGE = 10
+#SESSION_COOKIE_AGE = 10
 #设置session的过期时间  10S

@@ -4,3 +4,4 @@ encoding//app/common.py=utf-8
 encoding//app/html_helper.py=utf-8
 encoding//app/views.py=utf-8
 encoding//app02/views.py=utf-8
+encoding//oldboy/mymiddleware.py=utf-8
