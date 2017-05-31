@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+.reply{
+	width: 300px;
+	height: 900px;
+    padding-top: 4px;
+    float: right;
+	background-color:#CCC;
+	}
+	
+.content-page{
+	width: 630px;
+    overflow: hidden;
+    margin-top: 3px;
+    float: left;
+	}
+	
+.hide{
+	display:none;}
+	
+textarea{
+	height:90px;
+	width:600px;}
+	
+#part4-button{
+	/*float:right*/
+	margin-right:40px;}
+
+
+	

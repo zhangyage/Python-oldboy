@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*body{
+	font-size:.85em;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#000;
+	background-color:#CCC;}
+*/
+#Pageing A{
+	background-color:#204982;
+	border:1px solid White;
+	text-decoration:none;
+	color:White;
+	padding:.1em .6em .2em .6em;}
+
+#Pageing A.selected{
+	background-color:#AA7700;}

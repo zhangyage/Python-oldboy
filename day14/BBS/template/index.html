@@ -1,0 +1,124 @@
+{% extends "master/layout.html "%}
+<!-- 继承模板 -->
+
+<!-- 下面的部分是我们在模板中定义的可以变动的部分 -->
+{% block content %}
+	<div class='content-page'>
+	{% for item in data %}
+		<div class='item'>
+			<div class='part1'>
+				<a href='{{item.url}}'>{{item.title}}</a>
+				<span> --{{item.news_type.display}}</span>
+			</div>
+			<div class='part2'>
+				{{item.summary}}
+			</div>
+			<div class='part3'>
+				<a href='#' onclick='Favor(this,{{item.id}});'>赞：{{item.favor_count}}</a>
+				<a href='#' onclick='Reply(this,{{item.id}});'>&nbsp;&nbsp;评论：{{item.replay_count}}</a>
+				<span> &nbsp;&nbsp;--  {{item.create_date|date:"Y-m-d H:i:s"}}</span>
+			</div>
+			<div id='reply_detail' class='part4 hide' has-input='0'>
+			<!-- has-input自定义属性可以在后续判断使用 -->
+				<div class="replys">
+				</div>
+				<div class='input'>
+					<lable>请输入内容：</lable><textarea></textarea>
+                    <input id=‘part4-button’ type="button" value="提交" />
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+		<br />
+        <br />
+		<div>总条数为：{{count}}条,当前是第{{page}}页；</div>
+		<div>
+			<select onChange="ChangePageItem(this);" id='s1'>
+				<option value='1'>1</option>
+				<option value='3'>3</option>
+				<option value='5'>5</option>
+				<option value='10'>10</option>
+			</select>
+		</div>
+		<div id='Pageing'>
+			{{Hpage}}
+		</div>
+	</div>  
+	    <div class='reply'>
+        	
+        </div>
+      
+     {% block js %} 
+     	<script type="text/javascript">
+		$(function{
+			var per_item = $.cookie("pager_num");
+			if(per_item){
+				$('#s1').val(per_item);
+			}
+		}) 
+	    </script>
+	    <script type="text/javascript">
+			function ChangePageItem(arg){
+				//创建或修改cookies的值
+				var value = $(arg).val();
+				$.cookie("pager_num",value,{path:'/'});
+			}
+	    </script>
+
+	    <script type="text/javascript">
+			function Favor(doc,id){
+				$.ajax({
+					url:'/web/addfavor/',
+					data:{'nid':id},
+					type:'POST',
+					success:function(callback){
+						var obj = jQuery.parseJSON(callback);
+						if(obj.status == 1){
+							var temp = '赞' + obj.data;
+							$(doc).text(temp);
+						}else{
+							alert(obj.message);
+						}	
+					}
+				});				
+			}
+			
+			
+			function Reply(doc,id){
+				$.ajax({
+					url:'/web/getreply/',
+					data:{'nid':id},
+					type:'POST',
+					success:function(callback){
+						console.log(callback)
+						//[{"fields": {"content": "zhonghuarenmngongheguo", "new": 1, "create_date": "2017-05-31T03:27:10Z", "user": 1}, "model": "web.reply", "pk": 1}]
+						var obj = jQuery.parseJSON(callback);
+						$.each(obj,function(k,v){
+							//$(doc).parent().next().first().text('000')
+							//开始拼合数据
+							temp = "<label>"+v.fields.content+"</label>";
+							$(doc).parent().next().find('.replys').empty();
+							//清空
+							$(doc).parent().next().find('.replys').append(temp);
+							//追加
+						});
+					}
+				});
+				
+				//$(content).removeClass('hide');
+				//$(content).toggle('hide');
+				$(doc).parent().next().toggle('hide');
+				//toggle类似于linux的cd -操作可以记忆上一个步骤重复操作
+				/*
+				if($(content).attr('has-input')=='0'){
+					//判断属性值，
+					$(content).append("<lable>请输入内容：</lable><textarea></textarea>");
+					$(content).attr('has-input',1);
+					//复制修改属性值
+				}
+				*/
+			}
+	    </script>	    
+	    
+     {% endblock %}
+{% endblock %}

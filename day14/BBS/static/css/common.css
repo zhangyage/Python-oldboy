@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0px;}
+
+a {
+    text-decoration: none;
+}
+
+
+.pg-header{
+	height:44px;
+    background-color:#2459a2;}
+
+.header-menu{
+	 float: left;
+	 margin-left: 20px;}
+	 
+
+.digg-logo {
+    width: 121px;
+    height: 23px;
+    background: url(/static/image/ban-logo.png) no-repeat 0 0;
+	background-size: contain;
+	float: left;
+    margin-top: 11px;
+}
+
+a.tb {
+    color: #c0cddf;
+    margin-left: -3px;
+    padding: 0 13px 0 16px;
+    display: inline-block;
+    vertical-align: 1px\9;
+	line-height: 44px;
+}
+
+a.tb:hover {
+    color: #fff;
+    background-color: #204982;
+}
+
+a.active {
+    color: #fff;
+    background-color: #204982;
+}
+
+
+.header-search{
+	 float: right;
+	 margin-left: 20px;}
+	 
+.header-search a {
+    color: #fff;
+    margin: 0 5px;
+    display: inline-block;
+    vertical-align: 1px\9;
+    height: 44px;
+    padding: 0 20px;
+}
+
+a.login-btn-a:hover {
+    color: #fff;
+    background-color: #204982;
+}
+
+
+.login-btn-a {
+    color: #369;
+    padding-left: 8px;
+    padding-right: 8px;
+	line-height: 44px;
+}
+
+.foot-nav {
+    padding-top: 15px;
+    text-align: center;
+    border-top: 1px solid #ccdcef;
+    position: relative;
+}
+
+ .foot-nav2 {
+    margin-top: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+div {
+    display: block;
+}
+
+.pg-footer {
+    margin: 0 auto;
+    width: 960px;
+    font-size: 12px;
+    background-color: #fff;
+    padding: 0 28px;
+    overflow: hidden;
+}	
+	
+.pg-body{
+	width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: auto!important;
+    min-height: 713px;
+    padding: 6px 28px 60px;
+    background-color: #fff;
+	}
+
