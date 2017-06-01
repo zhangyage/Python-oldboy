@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登录页面</title>
+<link rel="stylesheet" href="/static/css/login.css" type="text/css" />
+</head>
+<body>
+	<div class="login" style="top:12%;">
+        <div class="mlogo"></div>
+        <form action="/web/login/" method="POST">
+		<div class="info" style="padding-top:60px;">
+        <div class="input_box">
+            <input name='username' value="" type="text" class="input1" placeholder="用户名"><span class=""></span>
+        </div>
+        <div class="input_box">
+            <input type="password" name="password" value="" class="input1" placeholder="密码">
+        </div>
+                <div class="input_box">
+            <input type="submit" name="submit" class="button1" value="登录">
+            <a class="fr" href="http://sso.corp.273.cn/BackPwd/inputUser/" target="_blank">忘记密码？</a>
+            <div style="float:right; margin-right: 10px;">
+            <i class="app"></i>
+            <a class="phone" target="_blank" href="http://www.273.cn/static/showPhone.html">用户注册</a>
+            </div>
+            <input type="hidden" name="refer" value="http://mbs.corp.273.cn/">
+            <div name="result" class="pull-left" style="margin-top: 10px; color: red;"></div>
+        </div>
+        </div>
+        </form>
+    </div>
+    
+    <p>Copyright © 1998 - 2014 273.cn All Rights Reserved</p>
+<!--  
+	<form action="/web/login/" method="POST">
+		{% csrf_token %}
+		
+    	<p>用户名：<input name='username' /></p>
+        <p>密    码：<input name='password' type="password" /></p>
+        <input type="submit" value="提交" />
+        <label style='color:red;'> {{status}} </label>
+    </form>
+-->	
+
+</body>
+</html>

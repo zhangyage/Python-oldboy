@@ -24,7 +24,7 @@
 				</div>
 				<div class='input'>
 					<lable>请输入内容：</lable><textarea></textarea>
-                    <input id=‘part4-button’ type="button" value="提交" />
+                    <input id=‘part4-button’ type="button" value="提交" onclick='Submit(this,{{item.id}});' />
 				</div>
 			</div>
 		</div>
@@ -66,6 +66,7 @@
 	    </script>
 
 	    <script type="text/javascript">
+	    	//点赞
 			function Favor(doc,id){
 				$.ajax({
 					url:'/web/addfavor/',
@@ -83,7 +84,7 @@
 				});				
 			}
 			
-			
+			//提交评论
 			function Reply(doc,id){
 				$.ajax({
 					url:'/web/getreply/',
@@ -96,7 +97,8 @@
 						$.each(obj,function(k,v){
 							//$(doc).parent().next().first().text('000')
 							//开始拼合数据
-							temp = "<label>"+v.fields.content+"</label>";
+							//temp = "<label>"+v.fields.content+"</label>";
+							temp = "<label>"+v.user__username+":"+v.content+"--"+v.create_date+"</label>";
 							$(doc).parent().next().find('.replys').empty();
 							//清空
 							$(doc).parent().next().find('.replys').append(temp);
@@ -118,7 +120,23 @@
 				}
 				*/
 			}
-	    </script>	    
+			
+			
+	    </script>	
+	    <script type="text/javascript">
+	  		//提交评论
+	  		function Submit(doc,id){
+				var value = $(doc).prev().val();
+				$.ajax({
+					url:'/web/submitreply/',
+					data:{'nid':id,'data':value},
+					type:'POST',
+					success:function(callback){
+						console.log(callback);
+						}
+					});
+			}
+	    </script>
 	    
      {% endblock %}
 {% endblock %}
