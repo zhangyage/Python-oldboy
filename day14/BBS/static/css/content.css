@@ -1,9 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 
-.reply{
+.right{
 	width: 300px;
-	height: 900px;
+	height: 600px;
     padding-top: 4px;
     float: right;
 	background-color:#CCC;
@@ -19,13 +19,33 @@
 .hide{
 	display:none;}
 	
-textarea{
+.reply1{
 	height:90px;
 	width:600px;}
 	
 #part4-button{
 	/*float:right*/
 	margin-right:40px;}
+	
+.content{
+	min-height:550px;
+	max-height:550px;
+	overflow-y:scroll;}
+.left{
+	float:left;}
+	
+.btn{
+	height:66px;
+	width:80px;}
+	
+#message{
+	height:60px;
+	width:213px;}
+
+.clearfix{
+	padding-top:0px;
+	padding-bottom:
+	}
 
 
 	

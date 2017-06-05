@@ -17,11 +17,11 @@ from django.template.context import RequestContext
 # Create your views here.
 #定义一个装饰器验证用户的
 def checklogin(main_func,*args,**kwargs):
-    def wrapper(request):
+    def wrapper(request,*args,**kwargs):
         if request.session.get('is_login'):
             return main_func(request,*args,**kwargs)
         else:
-            redirect('/web/login/')
+            return redirect('/web/login/')
     return wrapper
 
 
@@ -45,6 +45,11 @@ def login(request):
     return render_to_response('login.html',context_instance=RequestContext(request))
     #context_instance=RequestContext(request)   tocken配合
 
+def logout(request):
+    del request.session['is_login']
+    #删除session
+    return  redirect('/web/login/')
+
 
 def register(request):
     username = request.POST.get('username',None) 
@@ -52,12 +57,12 @@ def register(request):
     email = request.POST.get('email',None)
     user_type = request.POST.get('user_type',None)
     if request.method == 'POST':
-        Admin.objects.create(username=username,password=password,email=email,user_type=user_type,)
+        Admin.objects.create(username=username,password=password,email=email,user_type_id=int(user_type),)
 
     return render_to_response('register.html')
 
 
-#@checklogin
+@checklogin
 def index(request,page):
     '''
         @分页展示
@@ -76,7 +81,7 @@ def index(request,page):
     all_pages = pageobj.all_pages
     Hpage = html_helper.pager(page,all_pages)
     
-    ret = {'data':result,'count':all_data,'page':page,'Hpage':Hpage}
+    ret = {'data':result,'count':all_data,'page':page,'Hpage':Hpage,'username':request.session.get('is_login')['user']}
     response = render_to_response('index.html',ret)
 
     response.set_cookie('k1','v1')
@@ -84,7 +89,7 @@ def index(request,page):
     return response
  
  
-    
+@checklogin    
 def addfavor(request):
     '''
         @加赞
@@ -115,6 +120,7 @@ class CJsonEncoder(json.JSONEncoder):
         else:
             return json.JSONEncoder.default(self,obj)
 
+
 def getreply(request):
     '''
         @评论
@@ -132,12 +138,66 @@ def getreply(request):
     return HttpResponse(reply_list)
     #return HttpResponse(json.dumps(reply_list))
     #datetime.datetime(2017, 5, 31, 3, 27, 10, tzinfo=<UTC>)  时间格式是无法直接被json序列化的
-    
+
+@checklogin    
 def submitreply(request):
     '''
         @提交评论内容
     '''
-    id = request.POST.get('nid')
-    data = request.POST.get('data')
-    print id,data
-    #models.Reply.objects.create(content=data,user=models.,new=models.News.objects.get(id=id),)
+    ret = {'status':0,'data':'','message':''}
+    try:
+        id = request.POST.get('nid')
+        data = request.POST.get('data')
+        print id,data
+        Newobj = models.News.objects.get(id=id)
+        obj = models.Reply.objects.create(content=data,
+                                    user=models.Admin.objects.get(username=request.session.get('is_login')['user']),
+                                    new=Newobj,)
+        replay_count = Newobj.replay_count+1
+        Newobj.replay_count = replay_count
+        #评论数加1
+        Newobj.save()
+        ret['data'] = {'replay_count':replay_count,'user__username':obj.user.username,'content':obj.content,'create_date':obj.create_date.strftime('%Y-%m-%d %H:%M:%S')}
+        #获取最新提交的评论
+        ret['status'] = 1
+    except Exception,e:
+        ret['message'] = e.message
+    return HttpResponse(json.dumps(ret))
+
+
+@checklogin
+def submitchat(request):
+    ret = {'status':0,'data':'','message':''}
+    useradmin = request.session.get('is_login')['user']
+    try:
+        value = request.POST.get('data')
+        obj = models.Chat.objects.create(content=value,user=models.Admin.objects.get(username=useradmin))
+        ret['status'] = 1
+        ret['data'] = {'username':obj.user.username,'create_date':obj.create_date.strftime('%Y-%m-%d %H:%M:%S')}
+    except Exception,e:
+        ret['message'] = e.message
+    return HttpResponse(json.dumps(ret))
+
+
+def getchat(request):
+    objchat = models.Chat.objects.all().order_by('-id')[0:10].values('content','user__username','create_date','id')
+    #输出前10条记录
+    
+    reply_list = list(objchat)
+    #将django的数据类型转化为py的列表形
+    reply_list = json.dumps(reply_list,cls=CJsonEncoder)
+    #reply_list = serializers.serialize("json",reply_list)
+    return HttpResponse(reply_list)
+
+
+def getchat2(request):
+    #lastid = 10
+    lastID =  request.POST.get('lastid')
+    print lastID
+    objchat = models.Chat.objects.filter(id__gt=lastID).values('content','user__username','create_date')
+    reply_list = list(objchat)
+    #将django的数据类型转化为py的列表形
+    reply_list = json.dumps(reply_list,cls=CJsonEncoder)
+    #reply_list = serializers.serialize("json",reply_list)
+    return HttpResponse(reply_list)
+

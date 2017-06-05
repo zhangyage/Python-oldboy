@@ -5,11 +5,11 @@ from django.template.context import RequestContext
 
 #定义一个装饰器验证用户的
 def checklogin(main_func,*args,**kwargs):
-    def wrapper(request):
+    def wrapper(request,*args,**kwargs):
         if request.session.get('is_login'):
             return main_func(request,*args,**kwargs)
         else:
-            redirect('/app02/login/')
+            return redirect('/app02/login/')
     return wrapper
 
 

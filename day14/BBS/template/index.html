@@ -15,7 +15,7 @@
 			</div>
 			<div class='part3'>
 				<a href='#' onclick='Favor(this,{{item.id}});'>赞：{{item.favor_count}}</a>
-				<a href='#' onclick='Reply(this,{{item.id}});'>&nbsp;&nbsp;评论：{{item.replay_count}}</a>
+				<a href='#' class='Reply' onclick='Reply(this,{{item.id}});'>&nbsp;&nbsp;评论：{{item.replay_count}}</a>
 				<span> &nbsp;&nbsp;--  {{item.create_date|date:"Y-m-d H:i:s"}}</span>
 			</div>
 			<div id='reply_detail' class='part4 hide' has-input='0'>
@@ -23,7 +23,7 @@
 				<div class="replys">
 				</div>
 				<div class='input'>
-					<lable>请输入内容：</lable><textarea></textarea>
+					<lable>请输入内容：</lable><textarea class="reply1"></textarea>
                     <input id=‘part4-button’ type="button" value="提交" onclick='Submit(this,{{item.id}});' />
 				</div>
 			</div>
@@ -44,9 +44,32 @@
 			{{Hpage}}
 		</div>
 	</div>  
-	    <div class='reply'>
+	    <div class='right chat'>
+        	<div class='title'>
+            	最新榜 v0.1
+            </div>
+            <div id="chatpool" class='content'>
+            	
+            </div>
+            <div class="bottom clearfix">
+            	<div class="left msg">
+                	<textarea id="message" class="text"></textarea>
+                </div>
+                <div class="left submit">
+                	<input type='button' class="btn" value="发送" onclick='Sendmsg(this);'>
+                </div>
+                
+            </div>
         	
         </div>
+        <!--遮罩层开始 -->
+        <div id='shade' class='shade hide'></div>
+        <!--遮罩层结束 -->
+        
+        <!--加载层开始 -->
+        <div id='loading' class='loading hide'></div>
+        <!--加载层结束 -->
+        
       
      {% block js %} 
      	<script type="text/javascript">
@@ -91,15 +114,16 @@
 					data:{'nid':id},
 					type:'POST',
 					success:function(callback){
-						console.log(callback)
+						//console.log(callback)
 						//[{"fields": {"content": "zhonghuarenmngongheguo", "new": 1, "create_date": "2017-05-31T03:27:10Z", "user": 1}, "model": "web.reply", "pk": 1}]
 						var obj = jQuery.parseJSON(callback);
+						$(doc).parent().next().find('.replys').empty();
 						$.each(obj,function(k,v){
 							//$(doc).parent().next().first().text('000')
 							//开始拼合数据
 							//temp = "<label>"+v.fields.content+"</label>";
 							temp = "<label>"+v.user__username+":"+v.content+"--"+v.create_date+"</label>";
-							$(doc).parent().next().find('.replys').empty();
+							temp = temp + "</br>";
 							//清空
 							$(doc).parent().next().find('.replys').append(temp);
 							//追加
@@ -127,16 +151,113 @@
 	  		//提交评论
 	  		function Submit(doc,id){
 				var value = $(doc).prev().val();
+				$(doc).parent().parent().prev().find('.Reply').empty();
+				$("#shade,loading").removeClass('hide');
 				$.ajax({
 					url:'/web/submitreply/',
 					data:{'nid':id,'data':value},
 					type:'POST',
 					success:function(callback){
 						console.log(callback);
+							var obj = jQuery.parseJSON(callback);
+							if(obj.status == 1){
+								//alert('评论成功');
+								//{"status": 1, "message": "", "data": {"content": "hjyuyiuooioioio", "user__username": "zhangyage", "create_date": "2017-06-03 09:36:45"}}
+								//评论成功追加最新评论
+								temp = "<label>"+obj.data.user__username+":"+obj.data.content+"--"+obj.data.create_date+"</label>";
+								$(doc).parent().prev().find('.replys').append(temp);
+								
+								//更新评论个数
+								count = '评论：' + obj.data.replay_count
+								$(doc).parent().parent().prev().find('.Reply').append(count);
+							}else{
+								alert('操作失败'+obj.message);
+							}
+							$("#shade,loading").addClass('hide');
 						}
 					});
 			}
+
 	    </script>
+        <script type="text/javascript">
+			//chat提交
+			 function Sendmsg(doc){
+				var value = $('#message').val();
+				$.ajax({
+					url:'/web/submitchat/',
+					data:{'data':value},
+					type:'POST',
+					success:function(callback){
+						var obj = jQuery.parseJSON(callback);
+						if(obj.status == 1){
+							console.log(obj);
+							var tempalte = "<label>"+obj.data.username+"--"+obj.data.create_date+"</br>"+value+"</label>";
+							var tempalte = tempalte + "</br>"
+							$('#chatpool').append(tempalte);
+							var height = document.getElementById("chatpool")
+							$("#chatpool").scrollTop(height)
+						}else{
+								alert('操作失败'+obj.message);
+							}
+						}
+					});
+				
+				}
+        </script> 
+        
+        <script type="text/javascript">
+			setInterval('going()',2000);
+			window.is_first = true;
+			function going(){
+				if(window.is_first){
+							//第一次仅仅显示前10条
+							$.ajax({
+										url:'/web/getchat/',
+										type:'POST',
+										success:function(callback){
+											console.log(callback)
+											var callback = jQuery.parseJSON(callback);
+											window.last_id = callback[0].id;
+											//设置全局变量，巨鹿我们最后一条数据的id值
+											console.log(last_id)
+											callback = callback.reverse()
+											//翻转
+											$.each(callback,function(k,v){
+													var tempalte =  "<label>"+v.user__username+"--"+v.create_date+"</br>"+v.content+"</label>";
+													var tempalte = tempalte + "</br>"
+													$('#chatpool').append(tempalte);
+											});
+										}
+								});
+								window.is_first = false;
+								var height = document.getElementById("chatpool")
+								console.log(height)
+								$("#chatpool").scrollTop(height) 
+							}else{
+							//显示最新提交
+								$.ajax({
+										url:'/web/getchat2/',
+										data:{'lastid':window.last_id},
+										type:'POST',
+										success:function(callback){
+											console.log(callback)
+											var callback = jQuery.parseJSON(callback);
+											console.log(callback.length)
+											if(callback.length > 0){
+												window.last_id = callback[callback.length-1]
+												$.each(callback,function(k,v){
+													var tempalte =  "<label>"+v.user__username+"--"+v.create_date+"</br>"+v.content+"</label>";
+													var tempalte = tempalte + "</br>"
+													$('#chatpool').append(tempalte);
+											});
+											}
+											var height = document.getElementById("chatpool")
+											$("#chatpool").scrollTop(height)
+											}
+									});
+								}
+			}
+        </script>
 	    
      {% endblock %}
 {% endblock %}
