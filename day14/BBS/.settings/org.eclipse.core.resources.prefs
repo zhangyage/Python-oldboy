@@ -1,5 +1,6 @@
 eclipse.preferences.version=1
 encoding//BBS/settings.py=utf-8
+encoding//web/Helper/Checkcode.py=utf-8
 encoding//web/html_helper.py=utf-8
 encoding//web/models.py=utf-8
 encoding//web/views.py=utf-8

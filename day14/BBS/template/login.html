@@ -16,6 +16,10 @@
         <div class="input_box">
             <input type="password" name="password" value="" class="input1" placeholder="密码">
         </div>
+        <div class="input_box">
+        <input type="text" name='checkcode'/> <img  onclick='ChangeCode();' id='imgCode' src='/web/checkcode/' title='点击更新' />
+        </div>
+        <label style='color:red;'> {{status}} </label>
                 <div class="input_box">
             <input type="submit" name="submit" class="button1" value="登录">
             <a class="fr" href="/web/forgetpwd/" target="_blank">忘记密码？</a>
@@ -37,10 +41,18 @@
 		
     	<p>用户名：<input name='username' /></p>
         <p>密    码：<input name='password' type="password" /></p>
+        <p>验证码：<input type="text" name='checkcode'/> <img  onclick='ChangeCode();' id='imgCode' src='/web/checkcode/' title='点击更新' /></p>
         <input type="submit" value="提交" />
         <label style='color:red;'> {{status}} </label>
     </form>
 -->	
+	<script type="text/javascript">
+    
+	    function ChangeCode() {
+            var code = document.getElementById('imgCode');
+            code.src += '?';
+        }
+    </script>
 
 </body>
 </html>

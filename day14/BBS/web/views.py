@@ -6,6 +6,9 @@ from models import News,Chat,Admin,Reply
 import common
 import html_helper
 import json 
+
+from web.Helper import Checkcode
+import StringIO
 #from django.core import serializers
 #序列化django数据模块 
 import datetime
@@ -25,7 +28,35 @@ def checklogin(main_func,*args,**kwargs):
     return wrapper
 
 
-# Create your views here.
+def CheckCode(request):
+    mstream = StringIO.StringIO()
+    validate_code = Checkcode.create_validate_code()
+    img = validate_code[0]
+    img.save(mstream, "GIF")
+    
+    #将验证码保存到session
+    request.session["CheckCode"] = validate_code[1]
+    
+    return HttpResponse(mstream.getvalue()) 
+
+
+# def login(request):
+#     if request.method == 'POST':
+#         user = request.POST.get('username',None)  
+#         #获取用户名  如果没有获取到赋值为None
+#         pwd = request.POST.get('password',None)
+#         #检查用户名和密码是否存在
+#         result = Admin.objects.filter(username=user,password=pwd).count()
+#         if result == 1:
+#             #request.session['is_login'] = True
+#             request.session['is_login'] = {'user':user}
+#             #定义一下session
+#             return redirect('/web/index/')
+#         else:
+#             return render_to_response('login.html',{'status':'用户名或密码错误'})
+#     
+#     return render_to_response('login.html',context_instance=RequestContext(request))
+#     #context_instance=RequestContext(request)   tocken配合
 
 def login(request):
     if request.method == 'POST':
@@ -33,12 +64,18 @@ def login(request):
         #获取用户名  如果没有获取到赋值为None
         pwd = request.POST.get('password',None)
         #检查用户名和密码是否存在
+        check_code = request.POST.get('checkcode')
+        #从session中获取验证码
+        session_code = request.session["CheckCode"]
         result = Admin.objects.filter(username=user,password=pwd).count()
         if result == 1:
             #request.session['is_login'] = True
-            request.session['is_login'] = {'user':user}
-            #定义一下session
-            return redirect('/web/index/')
+            if check_code.strip().lower() != session_code.lower():
+                return render_to_response('login.html',{'status':'验证码不匹配'})
+            else:
+                request.session['is_login'] = {'user':user}
+                #定义一下session
+                return redirect('/web/index/')
         else:
             return render_to_response('login.html',{'status':'用户名或密码错误'})
     
