@@ -1,0 +1,4 @@
+filecmp模块下面提供了三个方法
+cmp 单文件对比
+cmpfiles 对文件对比
+dircmp 目录对比

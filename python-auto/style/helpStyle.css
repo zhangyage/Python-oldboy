@@ -1,0 +1,20 @@
+/*°ïÖúÖÐÐÄ*/
+.helpContent>div{ border: 1px solid #e5e5e5; margin-top: 20px;}
+.helpContent .helpLeft{ width: 228px;}
+.helpContent .helpLeft .photo{ height: 70px; line-height: 70px; text-align: center;}
+.helpContent .photo img{ width: 61px; height: 53px;}
+.helpContent .helpLeft ul{ border-top: 1px solid #e5e5e5; padding-bottom: 110px;}
+.helpContent .helpLeft li{ border-bottom: 1px solid #e5e5e5;}
+.helpContent .helpLeft dl{ background: #f6f7f7; display: none;}
+.helpContent .helpLeft a{ display: block; height: 40px; line-height: 40px; font-size: 16px; color:#000; padding-left:49px;}
+.helpContent .helpLeft a:hover{ color: #00ace9;}
+.helpContent .helpLeft dd a{ color: #666;}
+.helpContent .helpLeft dl a:hover,.helpContent .helpLeft a.cur{ background:#00ace9; color: #fff;}
+.helpContent .helpRight{ width: 754px; min-height: 548px; padding-bottom:60px;}
+.helpContent .helpRight .title{ border-bottom: 1px solid #e5e5e5; padding-left: 34px; height:70px; line-height:70px;font-size: 18px; color: #000;}
+.helpContent .detail_cont_list{padding: 18px 45px; overflow: hidden; line-height: 30px; color: #666; font-size: 16px;letter-spacing:1.5px;}
+.helpContent .detail_cont_list>p{ margin-bottom:8px;color: #444;}
+.helpContent .detail_cont_list span{ color:#000; font-weight:bold;}
+.helpContent .helpRight .tip{ text-indent: 0em; color:red; font-weight:bold; margin-bottom:20px;}
+.write_div{ display:none;}
+.setEmptyHelp{ height:511px;}
