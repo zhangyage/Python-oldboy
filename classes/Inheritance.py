@@ -46,4 +46,9 @@ if __name__ == '__main__':
     print isinstance(programer, Programer)
     #isinstance  判断对应是否属于一个类的子类
 
-
+'''
+['_Programer__weight', '__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_age', 'get_hobby', 'get_weight', 'hobby', 'language', 'name', 'self_introduction']
+{'_age': 25, '_Programer__weight': 75, 'name': 'zhang', 'language': 'python'}
+<class '__main__.BackendProgramer'>
+True
+'''
