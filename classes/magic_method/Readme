@@ -6,3 +6,19 @@
 创建类的对象  __new__  默认继承的时候执行了
 初始化对象  __init__
 销毁对象  __del__
+
+
+比较运算符：
+__cmp__(self,other)
+__eq__(self,other)
+__lt__(self,other)
+__gt__(self,other)
+
+数字运算符
+__add__(self,other)
+__sub__(self,other)
+__mul__(self,other)
+__div__(self,other)
+逻辑运算符
+__or__(self,other)
+__and__(self,other)
