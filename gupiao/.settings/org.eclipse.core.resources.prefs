@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//models/model.py=utf-8
+encoding//utility/sql_helper.py=utf-8
+encoding/conf.py=utf-8
+encoding/display.py=utf-8
+encoding/flask_app.py=utf-8
+encoding/model.py=utf-8
+encoding/sound.py=utf-8
+encoding/test_templates.py=utf-8
+encoding/update.py=utf-8

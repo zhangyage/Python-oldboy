@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>中华新闻网</title>
+<link type="text/css" rel="stylesheet" href="/static/css/common.css" />
+<link rel="stylesheet" href="/static/css/content.css" type="text/css" />
+<link href='/static/css/list.css'  rel='stylesheet' id='dashicons-css' type='text/css' />
+<!-- 引用模板也是可以自定义css的 -->
+{% block css %} {% endblock %}
+
+
+<!-- 引用模板也是可以自定义js -->
+<script type="text/javascript" src="/static/js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="/static/js/jquery.cookie.js"></script>
+{% block js %} {% endblock %}
+
+</head>
+<body>
+	<!-- 头部html -->
+	<div class='pg-header'>
+    	<div class='header-menu'>
+            <a href="/" class="digg-logo"></a>
+            <a href="/web/index/" class="tb active">全部</a>
+            <a href="/web/index/" class="tb">首页</a>
+            <a href="/web/index/" class="tb">儿童</a>
+            <a href="/web/index/" class="tb">男孩</a>
+            <a href="/web/index/" class="tb">老男人</a>
+        </div>
+
+        <div class='header-search'>
+            <a class="login-btn-a" id="reg-link-a">{{username}}</a>
+            <a href="/web/logout/" class="login-btn-a" id="login-link-a">退出</a>
+        </div>
+    </div>
+    
+    
+    <!-- 主要页面html -->
+	<div class='pg-body'>
+		{% block content %}{% endblock %}
+	</div>
+	
+	
+	<!-- 底部html -->
+    <div class='pg-footer'>
+    	<div class="foot-nav">
+    		<hr style=" height:2px;border:none;border-top:2px dotted #185598;" />
+		    <a href="/help/about" target="_blank">关于我们</a><span>|</span>
+		    <a href="/help/contact" target="_blank">联系我们</a><span>|</span>
+		    <a href="/help/service" target="_blank">服务条款</a><span>|</span>
+		    <a href="/help/privacy" target="_blank">隐私政策</a><span>|</span>
+		    <a href="/help/tool" target="_blank">抽屉新热榜工具</a><span>|</span>
+		    <a href="/download/model" target="_blank">下载客户端</a><span>|</span>
+		    <a href="/feedback" target="_blank">意见与反馈</a><span>|</span>
+		    <a href="/help/goodlink" target="_blank">友情链接</a><span>|</span>
+		    <a href="http://www.shouye.com/Index.do?method=show&amp;pageId=44251&amp;jid=xinrebang@gozap.com" target="_blank">公告</a>
+		    <a href="http://dig.chouti.com/feed.xml" target="_blank" style="margin-left:0;vertical-align:-2px;" title="Rss订阅，Feed地址：http://dig.chouti.com/feed.xml">		    
+		</div>
+		
+		<div class="foot-nav2">
+				
+			    <span class="foot_d">旗下站点</span>
+			    <span class="foot_a">©2017 chouti.com</span>
+			    <a target="_blank" href="http://www.yazhoujuejin.com/" class="foot_b">京ICP备16058771号 </a>
+			    <div style="margin-top:6px;">
+			        <span class="foot_d">违法和不良信息举报：</span>
+			        <span class="foot_a">电话：010-56241848  </span>
+			        <span class="foot_a" style="margin-left: 15px;">邮箱：<a style="color: #369;margin-right: 10px;" href="mailto:zhangyage@yazhoujuejin.com">zhangyage@yazhoujuejin.com</a> </span>
+			    </div>
+			    <div style="margin-top:6px;">版权所有：亚洲掘金投资管理(北京)有限公司</div>
+		</div>
+    </div>
+    
+
+</body>
+</html>
