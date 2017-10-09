@@ -4,3 +4,7 @@
 import os
 
 print os.path.dirname(os.path.realpath(__file__))+"\content.txt"
+
+a = 'abcdefg'
+b = 'efg'
+print a.endswith(b)
