@@ -22,3 +22,7 @@ __div__(self,other)
 逻辑运算符
 __or__(self,other)
 __and__(self,other)
+转换为字符串
+__str__
+__repr__
+__unicode__
