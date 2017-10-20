@@ -16,6 +16,6 @@ while True:
     elif guess < num:
         print "guess Smaller:",guess
     else:
-        print "Guess Ok,Game Over!"
+        print "Guess Ok,Game Over!" 
         break
     print "\n"
