@@ -1,0 +1,17 @@
+打开文件的方法
+open()
+文件读取的方法：
+read([size]):读取文件   size大写字节
+readline([size]):读取一行
+readlines([size]):读完文件，返回每一行组成的列表
+
+
+write(str):将字符串写入文件
+writelines(sequence_of_strings):写多行到文件
+
+文件的打开方式有：
+r     只读的方式打开     文件必须存在
+w     只写方式打开        文件不存在创建  文件存在将清空文件
+a     追加的方式打开   
+r+/w+ 读写方式打开
+a+    追加和读写方式打开
