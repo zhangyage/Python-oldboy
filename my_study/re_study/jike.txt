@@ -1,0 +1,1441 @@
+<ul class="cf" style="display: block;">
+			<!--list-->
+			 
+				 
+					
+<li id="2713" test="0" deg="0">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=2713&amp;posColumn=2713.1"></i>
+				
+			
+		
+		
+		<i class="rz-icon"></i> 
+		
+		<a href="//www.jikexueyuan.com/course/2713.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2713&amp;posColumn=2713.1">
+			<img src="https://a1.jikexueyuan.com/home/201604/28/3f10/57216b7d1ac79.jpg" class="lessonimg" title="Tornado 开发--TCP 编程" alt="Tornado 开发--TCP 编程">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2713&amp;posColumn=2713.1"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/2713.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2713&amp;posColumn=2713.1">Tornado 开发--TCP 编程</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			本课程主要讲解通过使用 tornado 中 ioloop，iostream 等相关 API 进行TCP编程。简单介绍了rpc相关知识，并且与同类框架 twisted 进行比较。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>5课时
+							46分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+					<i class="xinhao-icon3"></i><em>高级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">7449人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=2713&amp;posColumn=2713.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+					
+<li id="2688" test="0" deg="0" stop="1">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=2688&amp;posColumn=2688.2"></i>
+				
+			
+		
+		<i class="vip-icon"></i> 
+		
+		
+		<a href="//www.jikexueyuan.com/course/2688.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2688&amp;posColumn=2688.2">
+			<img src="https://a1.jikexueyuan.com/home/201604/20/7883/5717574c478e6.jpg" class="lessonimg" title="Python 类深入" alt="Python 类深入">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2688&amp;posColumn=2688.2"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/2688.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2688&amp;posColumn=2688.2">Python 类深入</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			本课程在已经掌握的有关类的知识基础上，对类和实例的某些特殊方法、属性进行深入探究，并梳理对类的认识，用特殊方法定制简单的类，还要了解迭代器和生成器的特点及应用。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>3课时
+							39分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+						<i class="xinhao-icon"></i><em>初级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">8825人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box" style="bottom: 4px;">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=2688&amp;posColumn=2688.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+					
+<li id="2666" test="0" deg="0" stop="1">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=2666&amp;posColumn=2666.3"></i>
+				
+			
+		
+		
+		<i class="rz-icon"></i> 
+		
+		<a href="//www.jikexueyuan.com/course/2666.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2666&amp;posColumn=2666.3">
+			<img src="https://a1.jikexueyuan.com/home/201604/12/545c/570c5c6d6707c.jpg" class="lessonimg" title="Python 类拓展" alt="Python 类拓展">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2666&amp;posColumn=2666.3"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/2666.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2666&amp;posColumn=2666.3">Python 类拓展</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			在初步了解类知识的基础之上，进一步拓展对类的认识，本课时将讲授类的继承、类的绑定方法、静态方法和类方法，还有多态和封装。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>3课时
+							38分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+						<i class="xinhao-icon"></i><em>初级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">6082人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box" style="bottom: 4px;">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=2666&amp;posColumn=2666.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+					
+<li id="2625" test="0" deg="0">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=2625&amp;posColumn=2625.4"></i>
+				
+			
+		
+		
+		<i class="rz-icon"></i> 
+		
+		<a href="//www.jikexueyuan.com/course/2625.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2625&amp;posColumn=2625.4">
+			<img src="https://a1.jikexueyuan.com/home/201605/13/62a0/57357fa98c62c.png" class="lessonimg" title="Python 类初步" alt="Python 类初步">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2625&amp;posColumn=2625.4"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/2625.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2625&amp;posColumn=2625.4">Python 类初步</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			本课时主要是对类有一个初步的了解，并能够使用简单的方法编写类，主要内容包括：相关基本概念，类的编写方法，实例化和实例属性。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>3课时
+							39分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+						<i class="xinhao-icon"></i><em>初级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">8888人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=2625&amp;posColumn=2625.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+					
+<li id="2604" test="0" deg="0">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=2604&amp;posColumn=2604.5"></i>
+				
+			
+		
+		<i class="vip-icon"></i> 
+		
+		
+		<a href="//www.jikexueyuan.com/course/2604.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2604&amp;posColumn=2604.5">
+			<img src="https://a1.jikexueyuan.com/home/201603/15/1367/56e76cf3a0c86.jpg" class="lessonimg" title="Python 函数" alt="Python 函数">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2604&amp;posColumn=2604.5"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/2604.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2604&amp;posColumn=2604.5">Python 函数</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			本课时主要介绍 Python 函数的建立、调用，包括建立函数的方法，函数的参数，使用特殊函数，并在上述知识的基础上，带领学习者通过练习来熟悉函数的应用。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>3课时
+							51分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+						<i class="xinhao-icon"></i><em>初级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">5869人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=2604&amp;posColumn=2604.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+					
+<li id="2575" test="0" deg="0">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=2575&amp;posColumn=2575.6"></i>
+				
+			
+		
+		<i class="vip-icon"></i> 
+		
+		
+		<a href="//www.jikexueyuan.com/course/2575.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2575&amp;posColumn=2575.6">
+			<img src="https://a1.jikexueyuan.com/home/201603/03/aa32/56d7a48f1e972.jpg" class="lessonimg" title="Python 文件和迭代" alt="Python 文件和迭代">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2575&amp;posColumn=2575.6"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/2575.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2575&amp;posColumn=2575.6">Python 文件和迭代</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			本课程主要讲解 Python 对文件的读、写方法，以及迭代的概念和迭代器的使用方法，从而进一步理解迭代的特点。最后综合应用所学内容，进行综合练习。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>3课时
+							44分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+						<i class="xinhao-icon"></i><em>初级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">5510人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=2575&amp;posColumn=2575.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+					
+<li id="2548" test="0" deg="0">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=2548&amp;posColumn=2548.7"></i>
+				
+			
+		
+		
+		<i class="rz-icon"></i> 
+		
+		<a href="//www.jikexueyuan.com/course/2548.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2548&amp;posColumn=2548.7">
+			<img src="https://a1.jikexueyuan.com/home/201602/22/6fb0/56ca71ff9d11c.jpg" class="lessonimg" title="Python 语句" alt="Python 语句">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2548&amp;posColumn=2548.7"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/2548.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2548&amp;posColumn=2548.7">Python 语句</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			本课程主要介绍 Python 中的语句相关知识，包括常用的 if...else，for，while 等，也包括常用的运算符知识学习。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>3课时
+							47分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+						<i class="xinhao-icon"></i><em>初级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">6743人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=2548&amp;posColumn=2548.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+					
+<li id="2528" test="0" deg="0">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=2528&amp;posColumn=2528.8"></i>
+				
+			
+		
+		<i class="vip-icon"></i> 
+		
+		
+		<a href="//www.jikexueyuan.com/course/2528.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2528&amp;posColumn=2528.8">
+			<img src="https://a1.jikexueyuan.com/home/201602/15/6740/56c17789aee50.jpg" class="lessonimg" title="Python 集合" alt="Python 集合">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2528&amp;posColumn=2528.8"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/2528.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2528&amp;posColumn=2528.8">Python 集合</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			本课程主要介绍 Python 中的集合，包括集合的基本概念、集合的常用方法以及集合运算等内容。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>3课时
+							22分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+						<i class="xinhao-icon"></i><em>初级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">5865人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=2528&amp;posColumn=2528.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+					
+<li id="2512" test="0" deg="0">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=2512&amp;posColumn=2512.9"></i>
+				
+			
+		
+		<i class="vip-icon"></i> 
+		
+		
+		<a href="//www.jikexueyuan.com/course/2512.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2512&amp;posColumn=2512.9">
+			<img src="https://a1.jikexueyuan.com/home/201601/28/b014/56a9793756358.jpg" class="lessonimg" title="Python 元组和字典" alt="Python 元组和字典">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2512&amp;posColumn=2512.9"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/2512.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2512&amp;posColumn=2512.9">Python 元组和字典</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			本课程主要介绍 Python 元组和字典的定义、基本操作以及相关操作方法，主要包括：定义、基本操作、常用方法。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>3课时
+							35分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+						<i class="xinhao-icon"></i><em>初级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">5706人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=2512&amp;posColumn=2512.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+					
+<li id="2461" test="0" deg="0">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=2461&amp;posColumn=2461.10"></i>
+				
+			
+		
+		
+		<i class="rz-icon"></i> 
+		
+		<a href="//www.jikexueyuan.com/course/2461.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2461&amp;posColumn=2461.10">
+			<img src="https://a1.jikexueyuan.com/home/201601/20/03bc/569eea58d14af.jpg" class="lessonimg" title="Python 列表" alt="Python 列表">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2461&amp;posColumn=2461.10"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/2461.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2461&amp;posColumn=2461.10">Python 列表</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			本课程主要讲解 Python 列表知识，包括列表定义、列表的基本操作、常用列表函数、列表与字符串比较，帮助初学者理解列表的相关操作。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>3课时
+							32分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+						<i class="xinhao-icon"></i><em>初级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">5279人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=2461&amp;posColumn=2461.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+					
+<li id="2441" test="0" deg="0">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=2441&amp;posColumn=2441.11"></i>
+				
+			
+		
+		<i class="vip-icon"></i> 
+		
+		
+		<a href="//www.jikexueyuan.com/course/2441.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2441&amp;posColumn=2441.11">
+			<img src="https://a1.jikexueyuan.com/home/201601/14/4d2b/569708c8cdfe3.jpg" class="lessonimg" title="Python 字符串" alt="Python 字符串">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2441&amp;posColumn=2441.11"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/2441.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2441&amp;posColumn=2441.11">Python 字符串</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			本课程主要讲解 Python 字符串知识，包括字符串简介、字符串的基本操作、常用字符串方法、字符串格式化输出和编码，帮助初学者理解字符串的相关操作。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>4课时
+							46分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+						<i class="xinhao-icon"></i><em>初级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">5020人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=2441&amp;posColumn=2441.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+					
+<li id="2378" test="0" deg="0">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=2378&amp;posColumn=2378.12"></i>
+				
+			
+		
+		
+		<i class="rz-icon"></i> 
+		
+		<a href="//www.jikexueyuan.com/course/2378.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2378&amp;posColumn=2378.12">
+			<img src="https://a1.jikexueyuan.com/home/201512/21/524f/5677591a95318.jpg" class="lessonimg" title="用 Python 计算" alt="用 Python 计算">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2378&amp;posColumn=2378.12"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/2378.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2378&amp;posColumn=2378.12">用 Python 计算</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			本课程介绍 Python 语言的数字类型以及相关的运算知识，并初步介绍模块和内建函数等知识。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>4课时
+							49分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+						<i class="xinhao-icon"></i><em>初级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">6702人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=2378&amp;posColumn=2378.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+					
+<li id="2376" test="0" deg="0">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=2376&amp;posColumn=2376.13"></i>
+				
+			
+		
+		<i class="vip-icon"></i> 
+		
+		
+		<a href="//www.jikexueyuan.com/course/2376.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2376&amp;posColumn=2376.13">
+			<img src="https://a1.jikexueyuan.com/home/201512/18/eb0f/56736e50049bb.jpg" class="lessonimg" title="Python 初级项目：远程操控电脑(三)" alt="Python 初级项目：远程操控电脑(三)">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2376&amp;posColumn=2376.13"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/2376.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2376&amp;posColumn=2376.13">Python 初级项目：远程操控电脑(三)</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			本课程主要会继初级项目第二节课通过实战项目来总结一下 Python 初级阶段的基础知识，让学员学会实战开发通过 Python 远程控制电脑的项目的最后一部分，对 Python 初级阶段基础知识能够融会贯通、深刻掌握。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>4课时
+							106分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+						<i class="xinhao-icon"></i><em>初级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">11209人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=2376&amp;posColumn=2376.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+					
+<li id="2326" test="0" deg="0">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=2326&amp;posColumn=2326.14"></i>
+				
+			
+		
+		
+		<i class="rz-icon"></i> 
+		
+		<a href="//www.jikexueyuan.com/course/2326.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2326&amp;posColumn=2326.14">
+			<img src="https://a1.jikexueyuan.com/home/201512/04/6f16/56610abc695b5.jpg" class="lessonimg" title="Python 初级项目：远程操控电脑(二)" alt="Python 初级项目：远程操控电脑(二)">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2326&amp;posColumn=2326.14"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/2326.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2326&amp;posColumn=2326.14">Python 初级项目：远程操控电脑(二)</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			本课程主要会继初级项目第一节课通过实战项目来总结一下 Python 初级阶段的基础知识，让学员学会实战开发通过 Python 远程控制电脑的项目的第二部分，对 Python 初级阶段基础知识能够融会贯通、深刻掌握。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>3课时
+							70分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+						<i class="xinhao-icon"></i><em>初级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">10239人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=2326&amp;posColumn=2326.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+					
+<li id="2320" test="0" deg="0">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=2320&amp;posColumn=2320.15"></i>
+				
+			
+		
+		<i class="vip-icon"></i> 
+		
+		
+		<a href="//www.jikexueyuan.com/course/2320.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2320&amp;posColumn=2320.15">
+			<img src="https://a1.jikexueyuan.com/home/201512/03/a06d/565faa8e7b4ca.jpg" class="lessonimg" title="Python 初级项目：远程操控电脑(一)" alt="Python 初级项目：远程操控电脑(一)">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2320&amp;posColumn=2320.15"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/2320.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2320&amp;posColumn=2320.15">Python 初级项目：远程操控电脑(一)</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			本课程将主要通过实战项目来总结一下 Python 初级阶段的基础知识，让学员学会实战开发通过 Python 远程控制电脑的项目，对 Python 初级阶段基础知识能够融会贯通、深刻掌握。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>3课时
+							31分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+						<i class="xinhao-icon"></i><em>初级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">12467人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=2320&amp;posColumn=2320.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+					
+<li id="2282" test="0" deg="0">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=2282&amp;posColumn=2282.16"></i>
+				
+			
+		
+		
+		<a href="//www.jikexueyuan.com/course/2282.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2282&amp;posColumn=2282.16">
+			<img src="https://a1.jikexueyuan.com/home/201511/24/fc70/5653c629976bf.jpg" class="lessonimg" title="Python 概述" alt="Python 概述">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2282&amp;posColumn=2282.16"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/2282.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2282&amp;posColumn=2282.16">Python 概述</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			本课程主要讲解 Python 语言概况和应用趋势，使初学者了解一名程序员从小工到专家的发展之路，学会安装 Python开发环境。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>3课时
+							26分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+						<i class="xinhao-icon"></i><em>初级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">12744人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=2282&amp;posColumn=2282.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+					
+<li id="2270" test="0" deg="0">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=2270&amp;posColumn=2270.17"></i>
+				
+			
+		
+		
+		<i class="rz-icon"></i> 
+		
+		<a href="//www.jikexueyuan.com/course/2270.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2270&amp;posColumn=2270.17">
+			<img src="https://a1.jikexueyuan.com/home/201511/19/d7a3/564d2b9a132b3.jpg" class="lessonimg" title="Python 初级之其他应用" alt="Python 初级之其他应用">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2270&amp;posColumn=2270.17"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/2270.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2270&amp;posColumn=2270.17">Python 初级之其他应用</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			本门课程主要会介绍一下 Python 的标准库以及其他经常使用的一些东西的第二部分。最后一节简单认识一下 GUI，向中级课程引导。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>3课时
+							50分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+					<i class="xinhao-icon2"></i><em>中级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">9213人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=2270&amp;posColumn=2270.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+					
+<li id="2003" test="0" deg="0">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=2003&amp;posColumn=2003.18"></i>
+				
+			
+		
+		<i class="vip-icon"></i> 
+		
+		
+		<a href="//www.jikexueyuan.com/course/2003.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2003&amp;posColumn=2003.18">
+			<img src="https://a1.jikexueyuan.com/home/201509/15/898b/55f7775a6044d.jpg" class="lessonimg" title="Python 标准库与其他应用" alt="Python 标准库与其他应用">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2003&amp;posColumn=2003.18"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/2003.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=2003&amp;posColumn=2003.18">Python 标准库与其他应用</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			本课程主要介绍 Python 的标准库以及其他经常使用的一些东西的第一部分，并配以示例加以理解。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>4课时
+							58分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+					<i class="xinhao-icon2"></i><em>中级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">9619人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=2003&amp;posColumn=2003.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+					
+<li id="1983" test="0" deg="0">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=1983&amp;posColumn=1983.19"></i>
+				
+			
+		
+		<i class="vip-icon"></i> 
+		
+		
+		<a href="//www.jikexueyuan.com/course/1983.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=1983&amp;posColumn=1983.19">
+			<img src="https://a1.jikexueyuan.com/home/201509/11/4f8f/55f2354f0d63b.jpg" class="lessonimg" title="Python 异常处理与文件操作" alt="Python 异常处理与文件操作">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=1983&amp;posColumn=1983.19"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/1983.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=1983&amp;posColumn=1983.19">Python 异常处理与文件操作</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			本课程将要讲解 Python 当中异常的处理方法以及文件的操作方法，并配以示例加以理解。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>4课时
+							72分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+					<i class="xinhao-icon2"></i><em>中级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">7723人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=1983&amp;posColumn=1983.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+					
+<li id="1975" test="0" deg="0">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=1975&amp;posColumn=1975.20"></i>
+				
+			
+		
+		
+		<a href="//www.jikexueyuan.com/course/1975.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=1975&amp;posColumn=1975.20">
+			<img src="https://a1.jikexueyuan.com/home/201509/10/730e/55f0e82c62d5d.jpg" class="lessonimg" title="Python ORM 框架概述" alt="Python ORM 框架概述">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=1975&amp;posColumn=1975.20"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/1975.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=1975&amp;posColumn=1975.20">Python ORM 框架概述</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			本课程首先对 ORM 的概念进行简短介绍，然后说明 Python ORM 框架 SQLAlchemy 的基本信息和安装过程，最后使用 SQLAlchemy 框架实现一个示例程序，帮助学员对 SQLAlchemy 形成更加直观的认识。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>3课时
+							37分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+						<i class="xinhao-icon"></i><em>初级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">6173人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=1975&amp;posColumn=1975.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+					
+<li id="1962" test="0" deg="0">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=1962&amp;posColumn=1962.21"></i>
+				
+			
+		
+		
+		<a href="//www.jikexueyuan.com/course/1962.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=1962&amp;posColumn=1962.21">
+			<img src="https://a1.jikexueyuan.com/home/201509/08/f453/55ee3def2d921.jpg" class="lessonimg" title="微信远控：Python 控制电脑的两种方法" alt="微信远控：Python 控制电脑的两种方法">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=1962&amp;posColumn=1962.21"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/1962.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=1962&amp;posColumn=1962.21">微信远控：Python 控制电脑的两种方法</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			本课讲解使用 Python 编写程序，用两种方式控制电脑执行打开文件、播放音乐、关机等等常用操作。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>4课时
+							31分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+					<i class="xinhao-icon2"></i><em>中级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">19146人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=1962&amp;posColumn=1962.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+					
+<li id="1860" test="0" deg="0">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=1860&amp;posColumn=1860.22"></i>
+				
+			
+		
+		
+		<i class="rz-icon"></i> 
+		
+		<a href="//www.jikexueyuan.com/course/1860.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=1860&amp;posColumn=1860.22">
+			<img src="https://a1.jikexueyuan.com/home/201508/19/8c18/55d3e17d02d93.jpg" class="lessonimg" title="Python 的面向对象程序设计" alt="Python 的面向对象程序设计">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=1860&amp;posColumn=1860.22"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/1860.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=1860&amp;posColumn=1860.22">Python 的面向对象程序设计</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			本课程中主要会讲 Python 的面向对象程序设计的相关知识，包括类、继承与方法等，并配以示例加以理解。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>4课时
+							97分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+					<i class="xinhao-icon2"></i><em>中级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">11940人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=1860&amp;posColumn=1860.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+					
+<li id="1765" test="0" deg="0">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=1765&amp;posColumn=1765.23"></i>
+				
+			
+		
+		
+		<a href="//www.jikexueyuan.com/course/1765.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=1765&amp;posColumn=1765.23">
+			<img src="https://a1.jikexueyuan.com/home/201508/05/abb2/55c175652e142.jpg" class="lessonimg" title="Python 算法入门详解" alt="Python 算法入门详解">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=1765&amp;posColumn=1765.23"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/1765.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=1765&amp;posColumn=1765.23">Python 算法入门详解</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			本课程主要讲解 Python 中算法等知识，包括快速排序、选择排序、二路并归排序、搜索算法等，并配以示例加以理解。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>7课时
+							152分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+					<i class="xinhao-icon2"></i><em>中级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">12893人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=1765&amp;posColumn=1765.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+					
+<li id="1713" test="0" deg="0">
+	<div class="lessonimg-box">
+			
+				
+				<i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=1713&amp;posColumn=1713.24"></i>
+				
+			
+		
+		<i class="vip-icon"></i> 
+		
+		
+		<a href="//www.jikexueyuan.com/course/1713.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=1713&amp;posColumn=1713.24">
+			<img src="https://a1.jikexueyuan.com/home/201507/30/a8e6/55b98279283b0.jpg" class="lessonimg" title="定向爬虫：动态加载网页的爬取" alt="定向爬虫：动态加载网页的爬取">
+			
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=1713&amp;posColumn=1713.24"></i>
+			</div>
+			
+
+		</a>
+		
+			
+		
+	</div>
+
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/1713.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=1713&amp;posColumn=1713.24">定向爬虫：动态加载网页的爬取</a></h2>
+		<p style="height: 0px; opacity: 0; display: none;">
+			当前大部分网页使用了 AJAX  异步加载技术，很多内容都是通过 JavaScript 动态加载的，于是在网页源代码里面找不到需要的内容。本课程着重讲解如何爬取这种类型的网站。
+		</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8"><i class="time-icon"></i><em>4课时
+							35分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						
+					<i class="xinhao-icon3"></i><em>高级</em>
+					</dd>
+					
+				</dl>
+				<em class="learn-number" style="display: none;">17145人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box">
+					
+					<a href="//www.jikexueyuan.com/course/pythonbase/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/9301/54578de87b2f1.png" alt="pythonbase" title="Python 基础" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=1713&amp;posColumn=1713.1&amp;aCCate=pythonbase">
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+ 
+				 
+				
+			
+
+			<!--list end-->
+		</ul>
