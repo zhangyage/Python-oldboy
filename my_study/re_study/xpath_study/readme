@@ -1,0 +1,20 @@
+xpath 是一门语言
+xpath可以在xml文档中查找信息
+xpath支持html
+xpath通过元素和属性进行导航
+可以用来提取信息
+可以代替正则表达式
+
+
+安装
+安装lxml库
+pyhon -m pip install lxml
+使用：
+from lxml import etree
+Selector = etree.HTML(网页源代码)
+
+应用Xpath提取内容：
+//定位根节点
+/往下层寻找
+提取文本的内容：/text()
+提取属性的内容：/@xxxx
