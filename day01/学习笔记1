@@ -9,3 +9,29 @@
 ASCII->unicode->UTF-8
 
 utf8存储英文的时候1个字节，存储中文的时候存储3个字节
+
+M model 管理控制数据库
+V view  视图、把用户的数据展现
+C controller  接受用户外部的请求
+
+jgo  不太关注C 
+MTV  T 模板
+
+高级语言分类：
+高级语言的程序是不能被计算机直接执行的，必须转换成二进制的方式才能执行
+
+python的解释器：
+Cpython  C语言开发
+Ipython  C语言开发 
+pypy     使用的时python开发的
+Jpython  使用java开发的
+ironPyrhon   使用的.net开发的
+
+windows命令行下的清屏操作
+>>> import os
+>>> os.system('cls')
+
+如下命令是退出
+>>> exit()
+
+python的后缀名没有任何的作用，就是一个命名规范而已
