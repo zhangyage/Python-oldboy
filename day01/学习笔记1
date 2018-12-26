@@ -14,7 +14,7 @@ M model 管理控制数据库
 V view  视图、把用户的数据展现
 C controller  接受用户外部的请求
 
-jgo  不太关注C 
+django  不太关注controller 
 MTV  T 模板
 
 高级语言分类：
@@ -35,3 +35,16 @@ windows命令行下的清屏操作
 >>> exit()
 
 python的后缀名没有任何的作用，就是一个命名规范而已
+
+变量（variables）：存储数据的运行结果方便后续调用
+变量的定义规范：
+1、变量的组成包括数字字母和下划线
+2、不能数字和下划线开头
+
+% 取余
+// 整除
+** 乘方
+
+sort()  顺序
+reverse() 逆序
+enumerate(list) 可以直接输出索引和值
