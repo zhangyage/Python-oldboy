@@ -12,8 +12,8 @@ while True:
     print 'loop:',count
     if count == print_num:
         print "已经到达指定位置:",count
-        xuanze = raw_input("你是否继续进行循环，请输入(y/n):")
-        if xuanze == 'y':
+        choice = raw_input("你是否继续进行循环，请输入(y/n):")
+        if choice == 'y':
             print_num = int(raw_input('请输入你要循环到那个数字：'))
                 
             if print_num <= count:
