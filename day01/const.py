@@ -32,4 +32,8 @@ print names.count(2)
 print names.index(2)
 print  names.index(2) + names[names.index(2)+1:].index(2) + 1
 #        第一个的位置               截断
+
+print hash('123')
+a='123'
+print hash(a) 
     
