@@ -1,6 +1,10 @@
  line.strip('\n').split(':')
  strip去掉多余的\n符号
- split已:作为分割符号
+ split已:作为分割符号           将字符转转换为列表
+ 
+ 
+ '_'.join(list)  将列表中的元素使用_连接为字符串
+ 
  
  常见的文件打开模式：
  r以只读的方式打开文件
@@ -16,3 +20,14 @@
  
  file_lianxi1.py   文件联系
  zifuchuli.py      处理字符串的方法练习
+ 
+ decode 是进行转码的   
+ str.decode('utf-8')  将utf-8的字符串转换为unicode字符编码
+ encode 解码
+ s.encode('gbk')      将unicode编码转换为gbk
+ s.encode('utf-8')    将unicode编码转换为utf-8
+ 
+ 怎么确定一个文件的编码呢？方法：
+ 可以导入模块 chardet
+ chardet.
+ 
