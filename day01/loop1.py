@@ -17,13 +17,14 @@ while True:
             print_num = int(raw_input('请输入你要循环到那个数字：'))
                 
             if print_num <= count:
-                print_num = int(raw_input("这个位置已经过去了，建议您输入一个更大的数字："))
-                    
+                print_num = int(raw_input("这个位置已经过去了，建议您输入一个更大的数字："))           
         else:
             break
 
 else:
-    print "循环结束了"          
+    print "循环结束了"       
+
+
 
             
             
