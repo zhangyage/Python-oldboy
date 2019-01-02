@@ -13,5 +13,5 @@ def calc(x):
 print calc(func)
 
 
-import sys
-print sys.getrecursionlimit()
+#import sys
+#print sys.getrecursionlimit()
