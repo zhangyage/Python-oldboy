@@ -36,4 +36,10 @@ print  names.index(2) + names[names.index(2)+1:].index(2) + 1
 print hash('123')
 a='123'
 print hash(a) 
+
+import sys
+sys.getrecursionlimit()
+sys.setrecursionlimit(n)
+sys.getdefaultencoding()
+sys.getfilesystemencoding()
     

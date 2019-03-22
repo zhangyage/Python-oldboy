@@ -37,3 +37,84 @@ dir()
 type()
 id()
 
+time模块
+time.time()  		获取时间戳
+time.localtime()    获取本地时间
+time.gmtime()   	获取的是格林威治时间
+time.mktime(time.localtime())   将一个struct_time转化为时间戳
+time.sleep(sec)     线程推迟时间运行，单位是S
+time.ctime(time.time())   将一个时间戳转化为  'Thu Jan 03 11:51:18 2019' 时间类型
+time.strftime('%Y-%m-%d %H:%M:%S',time.localtime())    把本地时间按照制定的格式输出
+	#'2019-01-03 11:54:46'
+	>>> time.strftime('%Y-%m-%d %H:%M:%S %w')   %w   当前的是周几
+	'2019-01-03 11:57:54 4'
+	>>> time.strftime('%Y-%m-%d %H:%M:%S %U')   %U   当前时间是新年的第几周需要加1
+	'2019-01-03 11:58:01 00'
+	
+datetime模块：
+>>> datetime.datetime.now()
+datetime.datetime(2019, 1, 3, 13, 0, 21, 886000)
+>>> datetime.date.fromtimestamp(time.time())
+datetime.date(2019, 1, 3)
+
+
+os
+>>> os.getpwd()        获取当前python解释器的路径
+>>> os.listdir('.')    列出目录清单
+>>> os.remove()        移除对应的文件
+>>> os.path.isfile()   验证给出的路径是否是一个文件
+>>> os.path.isdir()    验证给出的路径是否是一个目录
+>>> os.path.isabs()    判断是否是绝对路径
+>>> os.path.exists()   判断给出的路径是否存在
+>>> os.path.split()    返回一个路径目录和文件名
+>>> os.path.dirname()  获取路径名
+>>> os.path.abspath()  获取绝对路径
+>>> os.path.basename() 获取文件名
+>>> os.system()        运行系统的命令
+>>> os.getenv("HOME")  读取操作系统的环境变量
+>>> os.environ         返回操作系统所有的环境变量
+>>> os.environ.setdefault('HOME', '/home/test')         设置系统的环境变量，仅仅在程序运行时候有效
+>>> os.name            获取操作系统
+>>> os.rename(old,new) 重命名
+>>> os.makedirs(r"c:\python\test")   创建多级目录
+>>> os.mkdir('test')   创建单个目录
+>>> os.stat(file)      获取文件的属性
+>>> os.chmod(file)     修给文件权限和时间戳
+>>> os.exit()          终止当前进程
+>>> os.path.getsize(filename)  获取文件的大小
+>>> os.path.join(dir,filename) 结合目录名和文件名    
+>>> os.chdir(dirname)          修改程序的工作目录
+>>> os.kill(10884,signal.SIGKILL)   杀死进程
+
+
+sys
+>>>sys.argv    获取参数   第一个参数是脚本名
+脚本
+import sys
+
+print sys.argv
+执行
+G:\>python test.py run test
+['test.py', 'run', 'test']
+
+sys.exit('n')   退出程序  n是退出时候打印的内容
+sys.version     打印python的版本
+sys.platform    返回操作系统平台名称
+sys.stdout.write('please')   标准输出
+sys.getrecursionlimit()      获得最大的递归层数 
+sys.setrecursionlimit(1200)	  设置最大递归层数
+sys.getdefaultencoding()	  获取解释器默认编码
+sys.getfilesystemencoding()
+
+
+MD5的特点：
+压缩性：任意长度的数据，算出的MD5的长度都是一样的
+容易计算： 从原数据计算出MD5值很容易
+抗修改性： 对原数据进行任何改动，修改一个字节生成的md5值区别都会很大
+强抗碰撞： 已知元数据的MD5，想找到一个具有相同MD5值得数据是非常困难得
+
+
+
+
+
+
